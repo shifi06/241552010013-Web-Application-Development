@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Pertamaku</title>
+</head>
+<body>
+    <h1>Halo, Dunia!</h1>
+    <p>Ini halaman web pertamaku.</p>
+
+     <!-- Ini adalah komentar -->
+    <!-- Komentar bisa multi-baris 
+         seperti ini 
+    -->
+    
+    <p>Ini akan tampil</p>
+    <!-- <p>Ini tidak akan tampil</p> -->
+    
+    <!-- Contoh Nesting yang BENAR (elemen di dalam elemen): -->
+    <div>
+        <p>Teks</p>
+    </div>
+    
+    <!-- Contoh Nesting yang SALAH (tag saling tumpang tindih): -->
+    <!-- <div><p>
+        <p>Teks</div> -->
+
+    <h1>Liburan Tak Terlupakan ke Jerman</h1>
+    <p>Liburan semester lalu, saya berkesempatan mengunjungi Jerman selama 10 hari. Pengalaman yang luar biasa!</p>
+    <h2>Petualangan di Kota Berlin</h2>
+    <p>Berlin menjadi destinasi pertama saya. Kota ini memadukan sejarah kelam dengan modernitas yang menakjubkan.</p>
+    <h3>Mengunjungi Tembok Berlin</h3>
+    <p>Berdiri di depan East Side Gallery, saya bisa merasakan sejarah panjang Jerman. Grafiti-grafiti di sisa tembok Berlin bercerita tentang perjuangan dan harapan.</p>
+    <h4>Melihat Gerbang Brandenburg saat Senja</h4>
+    <p>Saat matahari mulai terbenam, Gerbang Brandenburg terlihat begitu megah. Lampu-lampu kota mulai menyala, menciptakan suasana romantis di pusat Berlin.</p>
+    <h5>Mencicipi Currywurst di Pinggir Jalan</h5>
+    <p>Penjual currywurst di dekat gerbang menjual sosis khas Berlin dengan saus tomat dan taburan kari. Hangat dan lezat di cuaca dingin!</p>
+    <h6>Seorang Musisi Jalanan Memainkan Biola</h6>
+    <p>Seorang gadis kecil sekitar 8 tahun memainkan biola dengan mata terpejam, larut dalam musiknya. Beberapa turis berhenti dan memberikan applause.</p>
+
+    <p>Ini adalah paragraf.</p>
+    <p>Paragraf lain dengan
+        jarak otomatis di atas.</p>
+    <!-- Pindah baris dalam <p>
+    diabaikan! Gunakan <br /> -->
+    <p>Baris satu<br />
+    Baris dua<br />
+    Baris tiga</p>
+
+    <!-- Pindah baris -->
+    <p>
+    Mawar itu merah<br />
+    Violet itu biru<br />
+    </p>
+    <!-- Garis horizontal (pemisah) -->
+    <h1>Bab 1</h1>
+    <p>Pertemuan ke 2 Mata Kuliah <b>Web Application Development</b></p>
+    <hr />
+
+    <h1>Bab 2</h1>
+    <p>Di pertemuan kali ini saya diberikan materi baru terkait HTML lalu mempraktekannya langsung, mengunakan aplikasi source code editor (VS Code)</p>
+
+    <!-- <div> - Container block -->
+
+    <div style="background-color: lightblue; padding: 10px; margin-bottom: 10px;">
+        <h2>Tentang Saya</h2>
+        <p>Halo, nama saya Shifi, saya seorang Web Developer.</p>
+    </div>
+    
+    <div style="background-color: lightgrey; padding: 10px;">
+        <h2>Keahlian Saya</h2>
+        <p>HTML, CSS, JavaScript</p>
+    </div>
+    
+    <!-- SPAN: Container inline:  -->
+    <p>
+        Warna favorit saya adalah 
+        <span style="color: black; font-weight: bold;">hitam</span> 
+        dan 
+        <span style="color: gray; font-weight: bold;">abu-abu</span>, 
+        <style> .highlight{color:red;font-weight:bold;}</style> 
+        saya juga suka
+        <span class="highlight">coding</span>.
+    </p>
+    
+    <!-- Perbandingan DIV vs SPAN -->
+    <h3>Perbedaan DIV dan SPAN:</h3>
+    <div style="border: 1px solid black; margin-bottom: 5px;">DIV ini membuat baris baru</div>
+    <div style="border: 1px solid black;">DIV lain di baris baru</div>
+    
+    <p>
+        <span style="background-color: yellow;">SPAN ini sebaris</span>
+        <span style="background-color: orange;">SPAN lain masih sebaris</span>
+    </p>
+
+    <h2> Atribut HTML </h2>
+    <!-- id - Pengenal unik -->
+    <div id="header">
+        <h1>Website Saya</h1>
+    </div>
+    
+    <div id="content">
+    <!-- class - Pengenal grup (bisa dipakai ulang) -->
+    <p class="intro">Selamat datang di website saya.</p>
+    <p class="intro">Ini adalah paragraf pengantar juga.</p>
+        
+    <!-- style - styling CSS langsung -->
+    <p style="color: red; font-size: 20px;">Teks merah dengan ukuran 20px</p>
+    <p style="background-color: yellow; padding: 10px;">Teks dengan latar kuning</p>
+        
+    <!-- title - tooltip saat hover -->
+    <p title="Ini adalah tooltip">Arahkan mouse ke sini untuk melihat tooltip</p>
+    <button title="Klik untuk menyimpan">Simpan</button>
+    </div>
+    
+    <div id="footer" style="margin-top: 30px; border-top: 1px solid black;">
+        <p>Hak Cipta &copy; 2024</p>
+    </div>
+
+    <h2> Tag Pemformatan Teks </h2>
+    
+    <!-- Tag untuk teks tebal -->
+    <p><strong>Teks tebal penting</strong> (semantik)</p>
+    <b>Teks tebal</b> (visual saja)
+    
+    <!-- Tag untuk teks miring -->
+    <p><em>Teks miring ditekankan</em> (semantik)</p>
+    <p><i>Teks miring</i> (visual saja)
+    
+    <!-- Tag lainnya -->
+    <p><u>Teks bergaris bawah</u>
+    <p><del>Teks dicoret</del> 
+    <p><mark>Teks disorot</mark>
+    <p><small>Teks lebih kecil</small>
+    
+    <!-- Subscript dan Superscript -->
+    <p>Rumus kimia air: H<sub>2</sub>O (subscript)
+    <p>Rumus matematika: X<sup>2</sup> (superscript)
+    
+    <!-- Tag bersarang (nested) -->
+    <p><strong><em>Teks tebal dan miring</em></strong></p>
+    <p><strong><mark>Teks tebal dan disorot</mark></strong></p>
+    <p><em><u>Teks miring dan bergaris bawah</u></em></p>
+
+<h2>Kode, Preformatted & Kutipan</h2>
+    
+    <!-- Kode inline -->
+    <p>Gunakan perintah <code>console.log("Hello World");</code> untuk debugging di JavaScript.</p>
+    
+    <!-- Preformatted (menjaga spasi) -->
+    <h2>Data Diri:</h2>
+    <pre>
+Nama: Shifi
+Umur: 17 tahun
+Pekerjaan: Web Developer
+Hobi: Coding, Membaca, Travelling
+    </pre>
+    
+    <!-- Blok kode -->
+    <h2>Contoh Fungsi JavaScript:</h2>
+    <pre><code>
+function sayHello(Jack) {
+    console.log("Halo, " + Jack + "!");
+    return "Selamat datang di pesta ulang tahunku " + Jack;
+}
+
+// Panggil fungsi
+say("Jack");
+    </code></pre>
+    
+    <!-- Kutipan blok -->
+    <h2>Kutipan</h2>
+    <blockquote>
+        Satu-satunya cara melakukan pekerjaan hebat adalah mencintai apa yang kamu lakukan.
+        <footer>-- Steve Jobs</footer>
+    </blockquote>
+    
+    <!-- Kutipan inline -->
+    <p>Einstein berkata
+        <q>Imajinasi lebih penting
+        dari pengetahuan.</q>
+    </p>
+    
+    <!-- Sitasi -->
+    <cite>The Pragmatic Programmer</cite>
+
+  <h2>Jenis-jenis Daftar di HTML</h2>
+    
+  <h2>Daftar (List)</h2>
+    <!-- Unordered List (bullet points) -->
+    <h2>📋 Daftar Belanja (Unordered List):</h2>
+    <ul>
+        <li>Beras 5 kg</li>
+        <li>Minyak goreng 2 liter</li>
+        <li>Telur 1 kg</li>
+        <li>Sayuran:
+            <ul>
+                <li>Bayam</li>
+                <li>Wortel</li>
+                <li>Brokoli</li>
+            </ul>
+        </li>
+    </ul>
+    
+    <!-- Ordered List (penomoran) -->
+    <h2>📝 Cara Membuat Kopi (Ordered List):</h2>
+    <ol>
+        <li>Rebus air hingga mendidih</li>
+        <li>Masukkan kopi ke dalam gelas</li>
+        <li>Tuangkan air panas</li>
+        <li>Aduk hingga merata</li>
+        <li>Tambahkan gula sesuai selera</li>
+    </ol>
+    
+    <!-- Description List (istilah dan deskripsi) -->
+    <h2>📚 Glosarium HTML (Description List):</h2>
+    <dl>
+        <dt><strong>HTML</strong></dt>
+        <dd>HyperText Markup Language - bahasa markup untuk membuat struktur halaman web</dd>
+        
+        <dt><strong>CSS</strong></dt>
+        <dd>Cascading Style Sheets - bahasa untuk mendesain tampilan halaman web</dd>
+        
+        <dt><strong>JavaScript</strong></dt>
+        <dd>Bahasa pemrograman untuk menambah interaktivitas pada halaman web</dd>
+    </dl>
+
+<section>
+    <h2>Daftar Bersarang & Atribut List</h2>
+    
+    <h2> Daftar Bersarang (Nested List) </h2>
+    <ul>
+        <li>Buah-buahan
+            <ul>
+                <li>Apel</li>
+                <li>Pisang</li>
+            </ul>
+        </li>
+        <li>Sayuran
+            <ul>
+            <li>Wortel</li>
+            <li>Brokoli</li>
+            </ul>
+        </li>
+    </ul>
+    
+
+    <h2> Atribut Ordered List </h2>
+    <!-- Mulai dari nomor 5 -->
+    <ol start="5">...</ol>
+
+    <!-- Tipe penomoran berbeda -->
+    <ol type="A"> <!-- A, B, C -->
+    <ol type="a"> <!-- a, b, c -->
+    <ol type="I"> <!-- I, II, III -->
+    <ol type="i"> <!-- i, ii, iii -->
+        
+    <!-- Urutan terbalik -->
+    <ol reversed>
+        <li>Ketiga</li> <!-- 3. -->
+        <li>Kedua</li> <!-- 2. -->
+        <li>Pertama</li> <!-- 1. -->
+    </ol> 
+</section>
+
+<h2> Link (Tag Anchor) </h2>
+    <!-- <a href="URL">Teks Link</a> href = Hypertext REFerence -->
+
+<h2>Jenis-jennis Link:</h2>
+    <!-- Eksternal (situs lain) -->
+<p> 
+    <a href="https://google.com">
+    Google</a>
+</p>
+
+<p>
+    <!-- Internal (halaman sendiri) -->
+    <a href="about.html">Tentang Kami</a>
+</p>
+
+<p>
+    <a href="../index.html">Kembali</a>
+</p>
+
+<p>
+    <!-- Anchor (bagian halaman sama) -->
+    <a href="#about">Ke bagian About</a>
+</p>
+
+<p>
+    <a href="#">Kembali ke Atas</a>
+</p>
+    
+<p>
+    <!-- Email & Telepon -->
+    <a href="mailto:hi@contoh.com">Email</a>
+</p>
+
+<p>
+    <a href="tel:+621234567890">Telepon</a>
+</p>
+   
+<h2> Atribut Link: </h2>
+<p>
+    <!-- Buka di tab baru -->
+    <a href="https://google.com"
+    target="_blank">Tab Baru</a>
+</p>
+
+<p>
+    <!-- Buka di tab baru -->
+    <a href="https://pin.it/9nhpOscDP"
+    target="_blank">Tab Baru</a>
+</p>
+
+<p>
+    <!-- Keamanan untuk link eksternal -->
+    <a href="https://external.com"
+    target="_blank"
+    rel="noopener noreferrer">
+    Link Eksternal Aman
+    </a>
+</p>
+
+<p>
+    <!-- Tooltip -->
+    <a href="about.html"
+    title="Pelajari tentang kami">
+    Tentang
+    </a>
+</p>
+
+<h2> Gambar (Image) </h2>
+<!-- <img src="sumber" alt="deskripsi" /> src = Sumber, alt = Teks alternatif -->
+
+<h2> Sumber & Atribut Gambar: </h2>
+    <P>
+    <!-- Gambar lokal -->
+    <img src="Café Berlin.png" alt="Foto saya" />
+    </P>
+
+    <P>
+    <!-- Gambar eksternal -->
+    <img src="https://i.pinimg.com/736x/f4/53/2d/f4532d0726dd259679341afc4ef6509a.jpg" alt="Eksternal" />
+    </P>
+
+    <P>
+    <!-- Dengan ukuran -->
+    <img src="German streets.png" alt="Foto" width="300" height="200" />
+    </P>
+
+    <P>
+    <!-- Lazy loading (performa) -->
+    <img src="Random.png" alt="Foto" loading="lazy" />
+    </P>
+
+ <h1>Video, Audio & Embedding</h1>
+    <b>Video:</b>
+
+    <video controls
+    width="640"
+    height="360">
+    <source src="ElyOtto-GREEN-APPLE-PASTE.mp4"
+    type="video/mp4" />
+
+    <source src="vid.webm" type="video/webm">
+    </video>
+    <p style="color: brown; font-weight: bold">
+    Tidak didukung
+    </p>
+
+    <b>Audio:</b>
+    <audio controls>
+    <source src="VIDEOCLUB_Roi.mp4"
+    type="audio/mpeg" />
+    </audio>
+
+    <source src="lagu.ogg"
+    type="audio/ogg" />
+    <p style="color: brown; font-weight: bold">
+    Tidak didukung.
+    </p>
+
+    <b>Embed (iframe):</b>
+    <!-- YouTube -->
+    <iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/VupDHd1j7yk?si=rZ_0Ws12DKtD0Dyb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen></iframe>
+
+   
+
+    <!-- Google Maps -->
+   <iframe 
+   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1839.6905872416423!2d13.391823376681264!3d52.52198157206166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851dd6a1d6f33%3A0x39e2efde807fc94e!2sBode-Museum!5e1!3m2!1sid!2sid!4v1771690619776!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+   </iframe>
+   
+
+</body>
+</html>
