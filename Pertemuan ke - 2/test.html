@@ -142,25 +142,27 @@
     <p><strong><em>Teks tebal dan miring</em></strong></p>
     <p><strong><mark>Teks tebal dan disorot</mark></strong></p>
     <p><em><u>Teks miring dan bergaris bawah</u></em></p>
+<hr />
 
 <h2>Kode, Preformatted & Kutipan</h2>
     
+    <h2>Kode & Teks Preformatted:</h2>
     <!-- Kode inline -->
-    <p>Gunakan perintah <code>console.log("Hello World");</code> untuk debugging di JavaScript.</p>
+    <p>Gunakan perintah <code>console.log("Hello World")
+    </code></p>
     
-    <!-- Preformatted (menjaga spasi) -->
-    <h2>Data Diri:</h2>
+    <!-- Preformatted (jaga spasi) -->
     <pre>
-Nama: Shifi
-Umur: 17 tahun
-Pekerjaan: Web Developer
-Hobi: Coding, Membaca, Travelling
+    Nama: Shifi
+    Umur: 17 tahun
+    Pekerjaan: Web Developer
+    Hobi: Coding, Membaca, Travelling
     </pre>
     
     <!-- Blok kode -->
     <h2>Contoh Fungsi JavaScript:</h2>
     <pre><code>
-function sayHello(Jack) {
+function sayHello(Jack) {       
     console.log("Halo, " + Jack + "!");
     return "Selamat datang di pesta ulang tahunku " + Jack;
 }
@@ -169,8 +171,8 @@ function sayHello(Jack) {
 say("Jack");
     </code></pre>
     
+    <h2>Kutipan:</h2>
     <!-- Kutipan blok -->
-    <h2>Kutipan</h2>
     <blockquote>
         Satu-satunya cara melakukan pekerjaan hebat adalah mencintai apa yang kamu lakukan.
         <footer>-- Steve Jobs</footer>
@@ -184,6 +186,7 @@ say("Jack");
     
     <!-- Sitasi -->
     <cite>The Pragmatic Programmer</cite>
+<hr />
 
   <h2>Jenis-jenis Daftar di HTML</h2>
     
@@ -227,6 +230,8 @@ say("Jack");
     </dl>
 
 <section>
+<hr />
+
     <h2>Daftar Bersarang & Atribut List</h2>
     
     <h2> Daftar Bersarang (Nested List) </h2>
@@ -263,6 +268,7 @@ say("Jack");
         <li>Pertama</li> <!-- 1. -->
     </ol> 
 </section>
+<hr />
 
 <h2> Link (Tag Anchor) </h2>
     <!-- <a href="URL">Teks Link</a> href = Hypertext REFerence -->
@@ -286,7 +292,6 @@ say("Jack");
 <p>
     <!-- Anchor (bagian halaman sama) -->
     <a href="#about">Ke bagian About</a>
-</p>
 
 <p>
     <a href="#">Kembali ke Atas</a>
@@ -295,7 +300,6 @@ say("Jack");
 <p>
     <!-- Email & Telepon -->
     <a href="mailto:hi@contoh.com">Email</a>
-</p>
 
 <p>
     <a href="tel:+621234567890">Telepon</a>
@@ -330,6 +334,7 @@ say("Jack");
     Tentang
     </a>
 </p>
+<hr />
 
 <h2> Gambar (Image) </h2>
 <!-- <img src="sumber" alt="deskripsi" /> src = Sumber, alt = Teks alternatif -->
@@ -338,6 +343,31 @@ say("Jack");
     <P>
     <!-- Gambar lokal -->
     <img src="Café Berlin.png" alt="Foto saya" />
+    </P>
+
+    <P>
+    <!-- Gambar lokal -->
+    <img src="Me.png" alt="Foto saya" />
+    </P>
+
+    <P>
+    <!-- Gambar lokal -->
+    <img src="Rabbit.jpeg" alt="Foto saya" />
+    </P>
+
+    <P>
+    <!-- Gambar lokal -->
+    <img src="Wow.gif" alt="Foto saya" />
+    </P>
+
+    <P>
+    <!-- Gambar lokal -->
+    <img src="foto dalam kereta.webp" alt="Foto saya" />
+    </P>
+
+     <P>
+    <!-- Gambar lokal -->
+    <img src="Logo STMIK.svg" alt="Foto saya" />
     </P>
 
     <P>
@@ -354,6 +384,7 @@ say("Jack");
     <!-- Lazy loading (performa) -->
     <img src="Random.png" alt="Foto" loading="lazy" />
     </P>
+<hr />
 
  <h1>Video, Audio & Embedding</h1>
     <b>Video:</b>
@@ -362,7 +393,7 @@ say("Jack");
     width="640"
     height="360">
     <source src="ElyOtto-GREEN-APPLE-PASTE.mp4"
-    type="video/mp4" />
+    type="video/mp4" /><video>
 
     <source src="vid.webm" type="video/webm">
     </video>
@@ -389,8 +420,6 @@ say("Jack");
     height="315" 
     src="https://www.youtube.com/embed/VupDHd1j7yk?si=rZ_0Ws12DKtD0Dyb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
     allowfullscreen></iframe>
-
-   
 
     <!-- Google Maps -->
    <iframe 
