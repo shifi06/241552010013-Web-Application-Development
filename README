@@ -2,7 +2,7 @@
 
 ## Deskripsi Mata Kuliah
 
-**Pengembangan Aplikasi Web (Web Application Development)** adalah mata kuliah yang mempelajari dasar hingga konsep pengembangan website dan aplikasi berbasis web. 
+**Pengembangan Aplikasi Web (Web Application Development)** adalah mata kuliah yang mempelajari dasar hingga konsep pengembangan website dan aplikasi berbasis web.
 
 Pada mata kuliah ini, mahasiswa akan memahami:
 
@@ -18,11 +18,12 @@ Mata kuliah ini menjadi fondasi penting bagi mahasiswa yang ingin mendalami bida
 
 **Agus Sulaiman, S.Kom., M.T**
 
-# Pertemuan
+---
 
+## Daftar Pertemuan
 
-## Pertemuan 1  
-### Pengantar Mata Kuliah, Kontrak Kuliah, dan Dasar HTML, CSS, JavaScript
+### Pertemuan 1  
+**Pengantar Mata Kuliah, Kontrak Kuliah, dan Dasar HTML, CSS, JavaScript**
 
 **Materi yang dipelajari:**
 - Penjelasan sistem perkuliahan
@@ -31,13 +32,12 @@ Mata kuliah ini menjadi fondasi penting bagi mahasiswa yang ingin mendalami bida
 - Pengenalan CSS
 - Pengenalan JavaScript
 
-🔗 Link Materi:  
-https://drive.google.com/file/d/1ANa_sH1wAKQCn7mQO5sIKPLOUoQ0jO_3/view?usp=sharing
+🔗 [Link Materi](https://drive.google.com/file/d/1ANa_sH1wAKQCn7mQO5sIKPLOUoQ0jO_3/view?usp=sharing)
 
 ---
 
-## Pertemuan 2  
-### Basic Tags, Text & Lists, Links & Images
+### Pertemuan 2  
+**Basic Tags, Text & Lists, Links & Images**
 
 **Materi yang dipelajari:**
 - Struktur dasar HTML
@@ -46,13 +46,12 @@ https://drive.google.com/file/d/1ANa_sH1wAKQCn7mQO5sIKPLOUoQ0jO_3/view?usp=shari
 - Link (anchor tag)
 - Menampilkan gambar pada website
 
-🔗 Link Materi:  
-https://drive.google.com/file/d/1-R9hFKWEZhjvFJ6Sjkqc_hPckqL5bSbl/view?usp=sharing
+🔗 [Link Materi](https://drive.google.com/file/d/1-R9hFKWEZhjvFJ6Sjkqc_hPckqL5bSbl/view?usp=sharing)
 
 ---
 
-## Pertemuan 3  
-### Forms & Semantic HTML
+### Pertemuan 3  
+**Forms & Semantic HTML**
 
 **Materi yang dipelajari:**
 - Membuat form input
@@ -61,12 +60,12 @@ https://drive.google.com/file/d/1-R9hFKWEZhjvFJ6Sjkqc_hPckqL5bSbl/view?usp=shari
 - Semantic HTML (header, section, article, footer, dll)
 - Struktur HTML yang lebih terorganisir
 
-🔗 Link Materi:  
-https://drive.google.com/file/d/12fZ7VVt2iHEYBC7iSQ5CE9CkNz6Ng1Hy/view?usp=sharing
+🔗 [Link Materi](https://drive.google.com/file/d/12fZ7VVt2iHEYBC7iSQ5CE9CkNz6Ng1Hy/view?usp=sharing)
 
+---
 
-## Pertemuan 4  
-### CSS Introduction, Selectors, Box Model
+### Pertemuan 4  
+**CSS Introduction, Selectors, Box Model**
 
 **Materi yang dipelajari:**
 - Dasar CSS
@@ -75,10 +74,8 @@ https://drive.google.com/file/d/12fZ7VVt2iHEYBC7iSQ5CE9CkNz6Ng1Hy/view?usp=shari
 - Box Model (margin, padding, border, content)
 - Styling dasar website
 
-🔗 Link Materi:  
-https://drive.google.com/file/d/1x0jmwSuJ-g3OZufQKRPWUqKyB-Qfzr54/view?usp=sharing
+🔗 [Link Materi](https://drive.google.com/file/d/1x0jmwSuJ-g3OZufQKRPWUqKyB-Qfzr54/view?usp=sharing)
 
+---
 
-
-Data scraping (or spidering) is basically when you build a small bot that visits a website, reads the HTML structure, and automatically pulls out the info you care about like product names, prices, reviews, or whatever data you need. Instead of manually copy-pasting stuff from a site like Amazon, your spider does the heavy lifting for you. Think of it like a smart digital intern that never gets tired and can browse hundreds of pages in minutes. genalan JavaScript
-
+© 2025 Pengembangan Aplikasi Web - Universitas 
