@@ -20,7 +20,7 @@ header {
 }
 
 #logo {
-    color: #22c55e;
+    color: #ddb70d;
     font-size: 24px;
     font-weight: bold;
 }
@@ -39,12 +39,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #22c55e;
+    background-color: #040333;
 }
 
 /* HERO */
 .hero {
-    background-color: #22c55e;
+    background-color: #080752;
     color: white;
     padding: 80px 50px;
     text-align: center;
@@ -61,7 +61,7 @@ nav ul li a:hover {
 .btn {
     display: inline-block;
     background-color: white;
-    color: #22c55e;
+    color: #0e0535;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 8px;
@@ -92,7 +92,7 @@ nav ul li a:hover {
 .about-container img {
     width: 250px;
     border-radius: 15px;
-    border: 3px solid #22c55e;
+    border: 3px solid #0e0752;
 }
 
 .about-text p {
@@ -124,14 +124,14 @@ input, textarea {
 button {
     padding: 10px 15px;
     border: none;
-    background-color: #22c55e;
+    background-color: #050f44;
     color: white;
     border-radius: 8px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #16a34a;
+    background-color: #1618a3;
 }
 
 /* FOOTER */
