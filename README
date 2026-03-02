@@ -1,54 +1,83 @@
-# Data Scraping / Spider
+# Pengembangan Aplikasi Web (Web Application Development) #
+
+## Deskripsi Mata Kuliah ##
+
+**Pengembangan Aplikasi Web (Web Application Development)** adalah mata kuliah yang mempelajari dasar hingga konsep pengembangan website dan aplikasi berbasis web. 
+
+Pada mata kuliah ini, mahasiswa akan memahami:
+
+- Struktur dasar halaman web menggunakan **HTML**
+- Styling dan tata letak menggunakan **CSS**
+- Interaktivitas menggunakan **JavaScript**
+- Konsep dasar bagaimana website bekerja di sisi client dan server
+- Praktik pembuatan website sederhana hingga terstruktur
+
+Mata kuliah ini menjadi fondasi penting bagi mahasiswa yang ingin mendalami bidang **Web Developer**, **Frontend Developer**, maupun **Fullstack Developer**.
+
+## Dosen Pengampu
+
+**Agus Sulaiman, S.Kom., M.T**
+
+# Pertemuan
+
+
+## Pertemuan 1  
+### Pengantar Mata Kuliah, Kontrak Kuliah, dan Dasar HTML, CSS, JavaScript
+
+**Materi yang dipelajari:**
+- Penjelasan sistem perkuliahan
+- Kontrak dan aturan kelas
+- Pengenalan HTML
+- Pengenalan CSS
+- Pengenalan JavaScript
+
+🔗 Link Materi:  
+https://drive.google.com/file/d/1ANa_sH1wAKQCn7mQO5sIKPLOUoQ0jO_3/view?usp=sharing
 
 ---
 
-## 📖 What is Web Application Development?
+## Pertemuan 2  
+### Basic Tags, Text & Lists, Links & Images
 
-Web Application Development adalah mata kuliah yang mempelajari dasar hingga konsep pengembangan website dan aplikasi berbasis web.
+**Materi yang dipelajari:**
+- Struktur dasar HTML
+- Tag heading dan paragraf
+- Ordered & unordered list
+- Link (anchor tag)
+- Menampilkan gambar pada website
 
-Mahasiswa akan memahami:
-
-- HTML untuk struktur halaman
-- CSS untuk styling dan layout
-- JavaScript untuk interaktivitas
-- Konsep client-side dan server-side
-- Pembuatan website dari dasar hingga terstruktur
-
-Bayangkan ini seperti membangun fondasi digital yang kokoh untuk karir di dunia pengembangan web.
-
----
-
-## 🎯 Apa tujuan dari mata kuliah ini?
-
-Tujuan utama mata kuliah ini adalah membekali mahasiswa dengan kemampuan membangun website dari nol hingga siap deploy.
-
-Mahasiswa akan belajar membuat halaman web yang:
-
-- Tidak hanya tampil menarik
-- Tetapi juga memiliki struktur kode yang rapi
-- Mudah dipelihara
-- Mengikuti standar industri
-
-Pada akhirnya, mahasiswa diharapkan mampu membuat portfolio website pribadi dan memahami alur kerja frontend developer.
+🔗 Link Materi:  
+https://drive.google.com/file/d/1-R9hFKWEZhjvFJ6Sjkqc_hPckqL5bSbl/view?usp=sharing
 
 ---
 
-## ⚙️ Bagaimana cara kerjanya?
+## Pertemuan 3  
+### Forms & Semantic HTML
 
-Pada tingkat dasar, mahasiswa akan:
+**Materi yang dipelajari:**
+- Membuat form input
+- Text field, radio button, checkbox
+- Button dan submit
+- Semantic HTML (header, section, article, footer, dll)
+- Struktur HTML yang lebih terorganisir
 
-1. Menulis kode HTML untuk membuat struktur halaman  
-2. Menambahkan CSS untuk mempercantik tampilan  
-3. Menggunakan JavaScript untuk menambahkan interaktivitas  
+🔗 Link Materi:  
+https://drive.google.com/file/d/12fZ7VVt2iHEYBC7iSQ5CE9CkNz6Ng1Hy/view?usp=sharing
 
-Setiap pertemuan dimulai dari konsep dasar lalu dilanjutkan dengan praktik langsung.
 
----
+## Pertemuan 4  
+### CSS Introduction, Selectors, Box Model
 
-## 🚀 Target Akhir
+**Materi yang dipelajari:**
+- Dasar CSS
+- Cara menghubungkan CSS ke HTML
+- CSS Selectors
+- Box Model (margin, padding, border, content)
+- Styling dasar website
 
-Setelah menyelesaikan mata kuliah ini, mahasiswa mampu:
+🔗 Link Materi:  
+https://drive.google.com/file/d/1x0jmwSuJ-g3OZufQKRPWUqKyB-Qfzr54/view?usp=sharing
 
-- Membuat website statis yang rapi
-- Memahami dasar pengembangan web modern
-- Siap melanjutkan ke framework seperti React, Laravel, atau Node.js
+
+
+z
