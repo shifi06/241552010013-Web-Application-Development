@@ -1,61 +1,79 @@
-# Prediksi Kinerja Akademik Mahasiswa  
-*Perbandingan Logistic Regression (SGD) dan Random Forest*
+Pengembangan Aplikasi Web (Web Application Development)
 
-Proyek ini bertujuan untuk membangun model machine learning untuk **memprediksi kinerja akademik mahasiswa** menggunakan dataset Student Performance Prediction dari Kaggle. Dua algoritma yang dibandingkan adalah **Logistic Regression dengan optimisasi Stochastic Gradient Descent (SGD)** dan **Random Forest**.  
+Deskripsi Mata Kuliah
 
-## 📂 Struktur Proyek
-- `PaperJournal/` – Naskah akhir proyek dalam format `.docx` dan `.pdf`  
-- `Proposal/` – Dokumen proposal awal penelitian dan perencanaan model  
-- `SourceCode/` – Notebook Jupyter berisi preprocessing, modeling, evaluasi, dan visualisasi  
-- `Dataset/` – Dataset Student Performance Prediction dalam format `.csv` / `.xlsx`  
-- `README.md` – Dokumentasi lengkap proyek  
+Pengembangan Aplikasi Web (Web Application Development) adalah mata kuliah yang mempelajari dasar hingga konsep pengembangan website dan aplikasi berbasis web. 
 
-## 📊 Deskripsi Dataset
-- **Sumber:** [Kaggle – Student Performance Prediction Dataset](https://www.kaggle.com/datasets/prajwalkanade/student-performance-prediction-dataset?utm_source=)  
-- **Jumlah sampel:** 145 mahasiswa  
-- **Jumlah fitur:** 14 atribut prediktor  
-- **Target:** Grade nilai akhir mahasiswa (AA, BA, BB, CB, CC, DC, DD, FD, FF)  
-- **Contoh fitur:**  
-  - `Study hours` (lama belajar)  
-  - `Attendance` (tingkat kehadiran)  
-  - `Class participation` (partisipasi kelas)  
-  - `Exam performance` (hasil ujian)  
+Pada mata kuliah ini, mahasiswa akan memahami:
 
-## ⚙️ Metodologi
-### 1. Preprocessing
-- Data cleaning (menangani missing values)  
-- Encoding variabel kategorikal (label encoding / one-hot encoding)  
-- Normalisasi fitur numerik (StandardScaler)  
-- Split data: 80% training, 20% testing  
+- Struktur dasar halaman web menggunakan HTML
+- Styling dan tata letak menggunakan CSS
+- Interaktivitas menggunakan JavaScript
+- Konsep dasar bagaimana website bekerja di sisi client dan server
+- Praktik pembuatan website sederhana hingga terstruktur
 
-### 2. Modeling
-- **Algoritma:** Logistic Regression (SGD), Random Forest  
-- **Tools:** Python, scikit-learn, pandas, numpy  
-- **Evaluasi:** Akurasi, Precision, Recall, F1-score, ROC-AUC  
+Mata kuliah ini menjadi fondasi penting bagi mahasiswa yang ingin mendalami bidang Web Developer, Frontend Developer, maupun Fullstack Developer
 
-### 3. Visualisasi
-- Heatmap korelasi antar fitur  
-- Confusion Matrix  
-- ROC Curve & AUC  
-- Feature Importance  
+Dosen Pengampu
 
-## 🎯 Tujuan Proyek
-- Membandingkan efektivitas Logistic Regression (SGD) dan Random Forest  
-- Menganalisis trade-off antara **efisiensi komputasi** (Logistic Regression) dan **akurasi/stabilitas prediksi** (Random Forest)  
-- Memberikan gambaran pemanfaatan machine learning dalam mendukung sistem prediksi kinerja akademik mahasiswa  
+Agus Sulaiman, S.Kom., M.T
 
-## 👥 Penulis
-- Shanaya Balghis Riyona (241552010012)  
-- Shifi Amalia Zein (241552010013)  
+Pertemuan
 
-## 🏫 Institusi
-Sekolah Tinggi Manajemen Informatika dan Komputer Tazkia, Fakultas Teknik Informatika  
-Mata Kuliah **Statistik dan Probabilitas – Semester II – Tahun Akademik 2024/2025**  
-Dosen Pengampu: Bapak Hendri Setiawan, S.Kom., M.T.  
 
-## 📜 Lisensi Dataset
-Lisensi: Creative Commons CC BY 4.0  
+Pertemuan 1  
+Pengantar Mata Kuliah, Kontrak Kuliah, dan Dasar HTML, CSS, JavaScript
+
+Materi yang dipelajari:
+- Penjelasan sistem perkuliahan
+- Kontrak dan aturan kelas
+- Pengenalan HTML
+- Pengenalan CSS
+- Pengenalan JavaScript
+
+🔗 Link Materi:  
+https://drive.google.com/file/d/1ANa_sH1wAKQCn7mQO5sIKPLOUoQ0jO_3/view?usp=sharing
 
 ---
 
-> Proyek ini dibuat sebagai bagian dari tugas besar UTS untuk mata kuliah yang diampu oleh Bapak Hendri Setiawan, S.Kom., M.T.
+Pertemuan 2  
+Basic Tags, Text & Lists, Links & Images
+
+Materi yang dipelajari:
+- Struktur dasar HTML
+- Tag heading dan paragraf
+- Ordered & unordered list
+- Link (anchor tag)
+- Menampilkan gambar pada website
+
+🔗 Link Materi:  
+https://drive.google.com/file/d/1-R9hFKWEZhjvFJ6Sjkqc_hPckqL5bSbl/view?usp=sharing
+
+---
+
+Pertemuan 3  
+Forms & Semantic HTML
+
+Materi yang dipelajari:
+- Membuat form input
+- Text field, radio button, checkbox
+- Button dan submit
+- Semantic HTML (header, section, article, footer, dll)
+- Struktur HTML yang lebih terorganisir
+
+🔗 Link Materi:  
+https://drive.google.com/file/d/12fZ7VVt2iHEYBC7iSQ5CE9CkNz6Ng1Hy/view?usp=sharing
+
+
+Pertemuan 4  
+CSS Introduction, Selectors, Box Model
+
+Materi yang dipelajari:
+- Dasar CSS
+- Cara menghubungkan CSS ke HTML
+- CSS Selectors
+- Box Model (margin, padding, border, content)
+- Styling dasar website
+
+🔗 Link Materi:  
+https://drive.google.com/file/d/1x0jmwSuJ-g3OZufQKRPWUqKyB-Qfzr54/view?usp=sharing
