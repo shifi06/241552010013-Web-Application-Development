@@ -1,35 +1,30 @@
-Pengembangan Aplikasi Web (Web Application Development)
+# Pengembangan Aplikasi Web (Web Application Development)
 
-# Deskripsi Mata Kuliah
+## Deskripsi Mata Kuliah
 
-Pengembangan Aplikasi Web (Web Application Development) adalah mata kuliah yang mempelajari dasar hingga konsep pengembangan website dan aplikasi berbasis web. 
+**Pengembangan Aplikasi Web (Web Application Development)** adalah mata kuliah yang mempelajari dasar hingga konsep pengembangan website dan aplikasi berbasis web. 
 
 Pada mata kuliah ini, mahasiswa akan memahami:
 
-- Struktur dasar halaman web menggunakan *HTML*
-- Styling dan tata letak menggunakan *CSS*
+- Struktur dasar halaman web menggunakan **HTML**
+- Styling dan tata letak menggunakan **CSS**
 - Interaktivitas menggunakan **JavaScript**
 - Konsep dasar bagaimana website bekerja di sisi client dan server
 - Praktik pembuatan website sederhana hingga terstruktur
 
 Mata kuliah ini menjadi fondasi penting bagi mahasiswa yang ingin mendalami bidang **Web Developer**, **Frontend Developer**, maupun **Fullstack Developer**.
 
----
+## Dosen Pengampu
 
-Dosen Pengampu
+**Agus Sulaiman, S.Kom., M.T**
 
-*Agus Sulaiman, S.Kom., M.T*
+# Pertemuan
 
----
 
-Pertemuan
+## Pertemuan 1  
+### Pengantar Mata Kuliah, Kontrak Kuliah, dan Dasar HTML, CSS, JavaScript
 
----
-
-Pertemuan 1  
-Pengantar Mata Kuliah, Kontrak Kuliah, dan Dasar HTML, CSS, JavaScript
-
-*Materi yang dipelajari:*
+**Materi yang dipelajari:**
 - Penjelasan sistem perkuliahan
 - Kontrak dan aturan kelas
 - Pengenalan HTML
@@ -41,10 +36,10 @@ https://drive.google.com/file/d/1ANa_sH1wAKQCn7mQO5sIKPLOUoQ0jO_3/view?usp=shari
 
 ---
 
-Pertemuan 2  
-Basic Tags, Text & Lists, Links & Images
+## Pertemuan 2  
+### Basic Tags, Text & Lists, Links & Images
 
-*Materi yang dipelajari:*
+**Materi yang dipelajari:**
 - Struktur dasar HTML
 - Tag heading dan paragraf
 - Ordered & unordered list
@@ -56,10 +51,10 @@ https://drive.google.com/file/d/1-R9hFKWEZhjvFJ6Sjkqc_hPckqL5bSbl/view?usp=shari
 
 ---
 
-Pertemuan 3  
-Forms & Semantic HTML
+## Pertemuan 3  
+### Forms & Semantic HTML
 
-*Materi yang dipelajari:*
+**Materi yang dipelajari:**
 - Membuat form input
 - Text field, radio button, checkbox
 - Button dan submit
@@ -69,12 +64,11 @@ Forms & Semantic HTML
 🔗 Link Materi:  
 https://drive.google.com/file/d/12fZ7VVt2iHEYBC7iSQ5CE9CkNz6Ng1Hy/view?usp=sharing
 
----
 
-Pertemuan 4  
-CSS Introduction, Selectors, Box Model
+## Pertemuan 4  
+### CSS Introduction, Selectors, Box Model
 
-*Materi yang dipelajari:*
+**Materi yang dipelajari:**
 - Dasar CSS
 - Cara menghubungkan CSS ke HTML
 - CSS Selectors
@@ -83,5 +77,3 @@ CSS Introduction, Selectors, Box Model
 
 🔗 Link Materi:  
 https://drive.google.com/file/d/1x0jmwSuJ-g3OZufQKRPWUqKyB-Qfzr54/view?usp=sharing
-
----
