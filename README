@@ -1,8 +1,16 @@
 # Pengembangan Aplikasi Web (Web Application Development)
 
+<<<<<<< HEAD
 ## Deskripsi Mata Kuliah
 
 **Pengembangan Aplikasi Web (Web Application Development)** adalah mata kuliah yang mempelajari dasar hingga konsep pengembangan website dan aplikasi berbasis web. 
+=======
+---
+
+## Deskripsi Mata Kuliah
+
+Pengembangan Aplikasi Web (Web Application Development) adalah mata kuliah yang mempelajari dasar hingga konsep pengembangan website dan aplikasi berbasis web.
+>>>>>>> 7f0a4c86c72c5628f10ce1ae014a106655ed3f78
 
 Pada mata kuliah ini, mahasiswa akan memahami:
 
@@ -16,14 +24,30 @@ Mata kuliah ini menjadi fondasi penting bagi mahasiswa yang ingin mendalami bida
 
 ## Dosen Pengampu
 
+<<<<<<< HEAD
 **Agus Sulaiman, S.Kom., M.T**
 
 # Pertemuan
+=======
+## Dosen Pengampu
+
+Agus Sulaiman, S.Kom., M.T
+>>>>>>> 7f0a4c86c72c5628f10ce1ae014a106655ed3f78
 
 
+<<<<<<< HEAD
 ## Pertemuan 1  
 ### Pengantar Mata Kuliah, Kontrak Kuliah, dan Dasar HTML, CSS, JavaScript
 
+=======
+## Pertemuan
+
+---
+
+### Pertemuan 1  
+**Pengantar Mata Kuliah, Kontrak Kuliah, dan Dasar HTML, CSS, JavaScript**
+
+>>>>>>> 7f0a4c86c72c5628f10ce1ae014a106655ed3f78
 **Materi yang dipelajari:**
 - Penjelasan sistem perkuliahan
 - Kontrak dan aturan kelas
@@ -36,8 +60,13 @@ https://drive.google.com/file/d/1ANa_sH1wAKQCn7mQO5sIKPLOUoQ0jO_3/view?usp=shari
 
 ---
 
+<<<<<<< HEAD
 ## Pertemuan 2  
 ### Basic Tags, Text & Lists, Links & Images
+=======
+### Pertemuan 2  
+**Basic Tags, Text & Lists, Links & Images**
+>>>>>>> 7f0a4c86c72c5628f10ce1ae014a106655ed3f78
 
 **Materi yang dipelajari:**
 - Struktur dasar HTML
@@ -51,8 +80,13 @@ https://drive.google.com/file/d/1-R9hFKWEZhjvFJ6Sjkqc_hPckqL5bSbl/view?usp=shari
 
 ---
 
+<<<<<<< HEAD
 ## Pertemuan 3  
 ### Forms & Semantic HTML
+=======
+### Pertemuan 3  
+**Forms & Semantic HTML**
+>>>>>>> 7f0a4c86c72c5628f10ce1ae014a106655ed3f78
 
 **Materi yang dipelajari:**
 - Membuat form input
@@ -65,8 +99,13 @@ https://drive.google.com/file/d/1-R9hFKWEZhjvFJ6Sjkqc_hPckqL5bSbl/view?usp=shari
 https://drive.google.com/file/d/12fZ7VVt2iHEYBC7iSQ5CE9CkNz6Ng1Hy/view?usp=sharing
 
 
+<<<<<<< HEAD
 ## Pertemuan 4  
 ### CSS Introduction, Selectors, Box Model
+=======
+### Pertemuan 4  
+**CSS Introduction, Selectors, Box Model**
+>>>>>>> 7f0a4c86c72c5628f10ce1ae014a106655ed3f78
 
 **Materi yang dipelajari:**
 - Dasar CSS
@@ -76,4 +115,10 @@ https://drive.google.com/file/d/12fZ7VVt2iHEYBC7iSQ5CE9CkNz6Ng1Hy/view?usp=shari
 - Styling dasar website
 
 🔗 Link Materi:  
+<<<<<<< HEAD
 https://drive.google.com/file/d/1x0jmwSuJ-g3OZufQKRPWUqKyB-Qfzr54/view?usp=sharing
+=======
+https://drive.google.com/file/d/1x0jmwSuJ-g3OZufQKRPWUqKyB-Qfzr54/view?usp=sharing
+
+---
+>>>>>>> 7f0a4c86c72c5628f10ce1ae014a106655ed3f78
