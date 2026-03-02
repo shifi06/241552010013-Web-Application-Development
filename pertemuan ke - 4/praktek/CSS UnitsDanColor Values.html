@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Units & Color</title>
+    <style>
+        /* Memberi style pada body agar box terlihat jelas */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .box {
+            width: 50%;
+            height: 100px;
+            background-color: rgba(255, 0, 0, 0.5); /* merah transparan */
+            color: #333;
+            font-size: 1.5rem;
+            padding: 1em;
+            margin-bottom: 20px;
+            /* Menambahkan border agar box terlihat jelas */
+            border: 1px solid #ccc;
+            /* Menambahkan display flex untuk teks di tengah */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* Menambahkan penjelasan */
+        .explanation {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .explanation ul {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Contoh Box</div>
+    
+    <div class="explanation">
+        <h3>Penjelasan properti yang digunakan:</h3>
+        <ul>
+            <li><strong>width: 50%;</strong> - Lebar 50% dari parent (body)</li>
+            <li><strong>height: 100px;</strong> - Tinggi 100 piksel</li>
+            <li><strong>background-color: rgba(255, 0, 0, 0.5);</strong> - Merah dengan transparansi 50%</li>
+            <li><strong>color: #333;</strong> - Warna teks abu-abu gelap (hex)</li>
+            <li><strong>font-size: 1.5rem;</strong> - Ukuran font 1.5x dari ukuran root (biasanya 24px)</li>
+            <li><strong>padding: 1em;</strong> - Padding 1x ukuran font elemen</li>
+        </ul>
+    </div>
+</body>
+</html>

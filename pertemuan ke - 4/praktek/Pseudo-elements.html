@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo-elements</title>
+    <style>
+        .quote::before { content: open-quote; font-size: 2em; color: gray; }
+        .quote::after { content: close-quote; font-size: 2em; color: gray; }
+        p.article::first-letter { font-size: 3em; float: left; color: navy; }
+        ::selection { background-color: #FFEB3B; color: black; }
+    </style>
+</head>
+<body>
+    <p class="quote">CSS itu keren!</p>
+    <p class="article">CSS adalah bahasa untuk mengatur tampilan web.</p>
+</body>
+</html>

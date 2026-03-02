@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Specificity</title>
+    <style>
+        p { color: blue; }
+        .intro { color: green; }
+        #special { color: red; }
+    </style>
+</head>
+<body>
+    <p id="special" class="intro">Ini merah (ID menang)</p>
+    <p class="intro">Ini hijau (class menang)</p>
+    <p>Ini biru (element selector)</p>
+</body>
+</html>
