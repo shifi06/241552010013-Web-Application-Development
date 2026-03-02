@@ -1,117 +1,54 @@
-# 📚 Pengembangan Aplikasi Web (Web Application Development)
-
-Repository ini berisi rangkuman materi dan dokumentasi pembelajaran mata kuliah Pengembangan Aplikasi Web.
+# Data Scraping / Spider
 
 ---
 
-## 📖 Deskripsi Mata Kuliah
+## 📖 What is Web Application Development?
 
-Pengembangan Aplikasi Web (Web Application Development) adalah mata kuliah yang membahas dasar hingga konsep pengembangan website dan aplikasi berbasis web.
+Web Application Development adalah mata kuliah yang mempelajari dasar hingga konsep pengembangan website dan aplikasi berbasis web.
 
-Pada mata kuliah ini, mahasiswa akan mempelajari:
+Mahasiswa akan memahami:
 
-- Struktur dasar halaman web menggunakan HTML
-- Styling dan tata letak menggunakan CSS
-- Interaktivitas menggunakan JavaScript
-- Konsep dasar cara kerja website (client-side & server-side)
-- Praktik pembuatan website sederhana hingga terstruktur
+- HTML untuk struktur halaman
+- CSS untuk styling dan layout
+- JavaScript untuk interaktivitas
+- Konsep client-side dan server-side
+- Pembuatan website dari dasar hingga terstruktur
 
-Mata kuliah ini menjadi fondasi penting bagi mahasiswa yang ingin mendalami bidang:
-
-- Web Developer  
-- Frontend Developer  
-- Fullstack Developer  
+Bayangkan ini seperti membangun fondasi digital yang kokoh untuk karir di dunia pengembangan web.
 
 ---
 
-## 👨‍🏫 Dosen Pengampu
+## 🎯 Apa tujuan dari mata kuliah ini?
 
-Agus Sulaiman, S.Kom., M.T
+Tujuan utama mata kuliah ini adalah membekali mahasiswa dengan kemampuan membangun website dari nol hingga siap deploy.
 
----
+Mahasiswa akan belajar membuat halaman web yang:
 
-# 📅 Daftar Pertemuan
+- Tidak hanya tampil menarik
+- Tetapi juga memiliki struktur kode yang rapi
+- Mudah dipelihara
+- Mengikuti standar industri
 
----
-
-## 🟢 Pertemuan 1  
-### Pengantar Mata Kuliah, Kontrak Kuliah, dan Dasar HTML, CSS, JavaScript
-
-**Materi yang dipelajari:**
-
-- Penjelasan sistem perkuliahan  
-- Kontrak dan aturan kelas  
-- Pengenalan HTML  
-- Pengenalan CSS  
-- Pengenalan JavaScript  
-
-🔗 Materi:  
-https://drive.google.com/file/d/1ANa_sH1wAKQCn7mQO5sIKPLOUoQ0jO_3/view?usp=sharing
+Pada akhirnya, mahasiswa diharapkan mampu membuat portfolio website pribadi dan memahami alur kerja frontend developer.
 
 ---
 
-## 🟢 Pertemuan 2  
-### Basic Tags, Text & Lists, Links & Images
+## ⚙️ Bagaimana cara kerjanya?
 
-**Materi yang dipelajari:**
+Pada tingkat dasar, mahasiswa akan:
 
-- Struktur dasar HTML  
-- Tag heading dan paragraf  
-- Ordered list & unordered list  
-- Link (anchor tag)  
-- Menampilkan gambar pada website  
+1. Menulis kode HTML untuk membuat struktur halaman  
+2. Menambahkan CSS untuk mempercantik tampilan  
+3. Menggunakan JavaScript untuk menambahkan interaktivitas  
 
-🔗 Materi:  
-https://drive.google.com/file/d/1-R9hFKWEZhjvFJ6Sjkqc_hPckqL5bSbl/view?usp=sharing
+Setiap pertemuan dimulai dari konsep dasar lalu dilanjutkan dengan praktik langsung.
 
 ---
 
-## 🟢 Pertemuan 3  
-### Forms & Semantic HTML
+## 🚀 Target Akhir
 
-**Materi yang dipelajari:**
+Setelah menyelesaikan mata kuliah ini, mahasiswa mampu:
 
-- Membuat form input  
-- Text field, radio button, checkbox  
-- Button dan submit  
-- Semantic HTML (header, section, article, footer, dll)  
-- Struktur HTML yang lebih terorganisir  
-
-🔗 Materi:  
-https://drive.google.com/file/d/12fZ7VVt2iHEYBC7iSQ5CE9CkNz6Ng1Hy/view?usp=sharing
-
----
-
-## 🟢 Pertemuan 4  
-### CSS Introduction, Selectors, Box Model
-
-**Materi yang dipelajari:**
-
-- Dasar CSS  
-- Cara menghubungkan CSS ke HTML  
-- CSS Selectors  
-- Box Model (margin, padding, border, content)  
-- Styling dasar website  
-
-🔗 Materi:  
-https://drive.google.com/file/d/1x0jmwSuJ-g3OZufQKRPWUqKyB-Qfzr54/view?usp=sharing
-
----
-
-# 🎯 Tujuan Pembelajaran
-
-Setelah mengikuti mata kuliah ini, mahasiswa diharapkan mampu:
-
-- Memahami struktur dan sintaks dasar HTML, CSS, dan JavaScript  
-- Membuat website statis yang terstruktur dengan baik  
-- Mengimplementasikan desain tampilan menggunakan CSS  
-- Memahami konsep dasar interaktivitas web  
-- Membangun fondasi untuk pengembangan web yang lebih kompleks  
-
----
-
-# 🚀 Penutup
-
-Repository ini akan terus diperbarui sesuai dengan perkembangan materi perkuliahan.
-
-Semoga dokumentasi ini membantu dalam proses belajar dan pengembangan skill di bidang Web Development.
+- Membuat website statis yang rapi
+- Memahami dasar pengembangan web modern
+- Siap melanjutkan ke framework seperti React, Laravel, atau Node.js
