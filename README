@@ -1,103 +1,55 @@
-# PENGEMBANGAN APLIKASI WEB
+# README
 
-## WEB APPLICATION DEVELOPMENT
-
----
-
-Mata kuliah yang mempelajari dasar hingga konsep pengembangan website dan aplikasi berbasis web. Dari struktur HTML hingga interaktivitas JavaScript, semua akan dipelajari secara bertahap dan terstruktur.
+**Pengembangan Aplikasi Web** adalah mata kuliah yang mempelajari dasar hingga konsep pengembangan website dan aplikasi berbasis web. Mahasiswa akan membangun pemahaman tentang struktur HTML, styling dengan CSS, hingga interaktivitas menggunakan JavaScript. Alih-alih membuat website secara asal-asalan, mahasiswa akan belajar pendekatan terstruktur dalam membangun antarmuka web yang fungsional dan sesuai standar industri. Bayangkan ini seperti membangun fondasi digital yang kokoh untuk karir di dunia pengembangan web.
 
 ---
 
-## APA YANG DIPELAJARI?
+## Apa tujuan dari mata kuliah ini?
+
+Tujuan utama dari mata kuliah ini adalah membekali mahasiswa dengan kemampuan membangun website dari nol hingga siap deploy. Mahasiswa akan belajar membuat halaman web yang tidak hanya tampil menarik, tetapi juga memiliki struktur kode yang rapi, semantik, dan mudah dipelihara. Pada akhirnya, mahasiswa diharapkan mampu mengembangkan portofolio website pribadi, memahami alur kerja frontend developer, dan siap melanjutkan ke teknologi web yang lebih kompleks seperti framework modern atau pemrograman backend. Mata kuliah ini mengubah kode mentah menjadi website nyata yang dapat digunakan dan dibagikan.
 
 ---
 
-**STRUKTUR DASAR WEB**  
-Membangun fondasi halaman web menggunakan HTML. Memahami tag, elemen, dan struktur dokumen yang valid.
+## Bagaimana cara kerjanya?
 
-**STYLING & TATA LETAK**  
-Mempercantik tampilan website dengan CSS. Mulai dari selector, box model, hingga layouting yang responsif.
-
-**INTERAKTIVITAS**  
-Menghidupkan halaman web menggunakan JavaScript. Membuat website yang dinamis dan interaktif.
-
-**CLIENT & SERVER**  
-Memahami bagaimana website bekerja. Konsep request-response, client-side vs server-side processing.
+Pada tingkat dasar, mahasiswa akan menulis kode HTML untuk membuat struktur halaman, menambahkan CSS untuk mempercantik tampilan, dan menggunakan JavaScript untuk menambahkan interaktivitas. Dalam praktiknya, setiap pertemuan dimulai dari konsep dasar, lalu dilanjutkan dengan studi kasus dan latihan langsung. Alurnya sederhana namun powerful: memahami materi → melihat contoh → mencoba sendiri → mendapatkan umpan balik → mengulangi. Ini seperti mengajarkan mahasiswa, "Ini teorinya, ini contohnya, sekarang coba buat versimu sendiri."
 
 ---
 
-## DOSEN PENGAMPU
+## Kontributor
+
+**shifi06**  
+shifi06
 
 ---
 
-**AGUS SULAIMAN, S.KOM., M.T**  
-Dosen berpengalaman di bidang pengembangan web dan arsitektur sistem informasi.
+## Bahasa
+
+- **HTML**: 96.2%
+- **CSS**: 3.8%
 
 ---
 
-## PERTEMUAN 1
+## Rilis
 
-### PENGANTAR MATA KULIAH & DASAR HTML, CSS, JS
-
-**MATERI:**  
-Sistem perkuliahan • Kontrak kelas • Pengenalan HTML • Pengenalan CSS • Pengenalan JavaScript
-
-🔗 [LINK MATERI](https://drive.google.com/file/d/1ANa_sH1wAKQCn7mQO5sIKPLOUoQ0jO_3/view?usp=sharing)
+No releases published  
+Create a new release
 
 ---
 
-## PERTEMUAN 2
+## Paket
 
-### BASIC TAGS, TEXT & LISTS, LINKS & IMAGES
-
-**MATERI:**  
-Struktur dasar HTML • Heading & paragraf • Ordered & unordered list • Anchor tag • Menampilkan gambar
-
-🔗 [LINK MATERI](https://drive.google.com/file/d/1-R9hFKWEZhjvFJ6Sjkqc_hPckqL5bSbl/view?usp=sharing)
+No packages published  
+Publish your first package
 
 ---
 
-## PERTEMUAN 3
+## Alur Kerja yang Disarankan
 
-### FORMS & SEMANTIC HTML
+Berdasarkan teknologi yang digunakan:
 
-**MATERI:**  
-Form input • Text field • Radio button • Checkbox • Button • Semantic HTML (header, section, article, footer)
+**Jekyll using Docker image**  
+Package a Jekyll site using the jekyll/builder Docker image.
 
-🔗 [LINK MATERI](https://drive.google.com/file/d/12fZ7VVt2iHEYBC7iSQ5CE9CkNz6Ng1Hy/view?usp=sharing)
-
----
-
-## PERTEMUAN 4
-
-### CSS INTRODUCTION, SELECTORS, BOX MODEL
-
-**MATERI:**  
-Dasar CSS • Menghubungkan CSS ke HTML • CSS Selectors • Box Model (margin, padding, border, content) • Styling dasar
-
-🔗 [LINK MATERI](https://drive.google.com/file/d/1x0jmwSuJ-g3OZufQKRPWUqKyB-Qfzr54/view?usp=sharing)
-
----
-
-## STATISTIK REPOSITORI
-
----
-
-**BAHASA PEMROGRAMAN:**  
-• HTML: 93.9%  
-• Python: 3.5%  
-• CSS: 1.4%  
-• JavaScript: 1.2%
-
----
-
-## KONTRIBUTOR
-
----
-
-**ZEROCOOL979**  
-*zerocool979*
-
----
-
-© 2025 PENGEMBANGAN APLIKASI WEB - UNIVERSITAS
+**SLSA Generic generator**  
+Configure
