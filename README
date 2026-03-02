@@ -1,81 +1,103 @@
-# Pengembangan Aplikasi Web (Web Application Development)
+# PENGEMBANGAN APLIKASI WEB
 
-## Deskripsi Mata Kuliah
-
-**Pengembangan Aplikasi Web (Web Application Development)** adalah mata kuliah yang mempelajari dasar hingga konsep pengembangan website dan aplikasi berbasis web.
-
-Pada mata kuliah ini, mahasiswa akan memahami:
-
-- Struktur dasar halaman web menggunakan **HTML**
-- Styling dan tata letak menggunakan **CSS**
-- Interaktivitas menggunakan **JavaScript**
-- Konsep dasar bagaimana website bekerja di sisi client dan server
-- Praktik pembuatan website sederhana hingga terstruktur
-
-Mata kuliah ini menjadi fondasi penting bagi mahasiswa yang ingin mendalami bidang **Web Developer**, **Frontend Developer**, maupun **Fullstack Developer**.
-
-## Dosen Pengampu
-
-**Agus Sulaiman, S.Kom., M.T**
+## WEB APPLICATION DEVELOPMENT
 
 ---
 
-## Daftar Pertemuan
-
-### Pertemuan 1  
-**Pengantar Mata Kuliah, Kontrak Kuliah, dan Dasar HTML, CSS, JavaScript**
-
-**Materi yang dipelajari:**
-- Penjelasan sistem perkuliahan
-- Kontrak dan aturan kelas
-- Pengenalan HTML
-- Pengenalan CSS
-- Pengenalan JavaScript
-
-🔗 [Link Materi](https://drive.google.com/file/d/1ANa_sH1wAKQCn7mQO5sIKPLOUoQ0jO_3/view?usp=sharing)
+Mata kuliah yang mempelajari dasar hingga konsep pengembangan website dan aplikasi berbasis web. Dari struktur HTML hingga interaktivitas JavaScript, semua akan dipelajari secara bertahap dan terstruktur.
 
 ---
 
-### Pertemuan 2  
-**Basic Tags, Text & Lists, Links & Images**
-
-**Materi yang dipelajari:**
-- Struktur dasar HTML
-- Tag heading dan paragraf
-- Ordered & unordered list
-- Link (anchor tag)
-- Menampilkan gambar pada website
-
-🔗 [Link Materi](https://drive.google.com/file/d/1-R9hFKWEZhjvFJ6Sjkqc_hPckqL5bSbl/view?usp=sharing)
+## APA YANG DIPELAJARI?
 
 ---
 
-### Pertemuan 3  
-**Forms & Semantic HTML**
+**STRUKTUR DASAR WEB**  
+Membangun fondasi halaman web menggunakan HTML. Memahami tag, elemen, dan struktur dokumen yang valid.
 
-**Materi yang dipelajari:**
-- Membuat form input
-- Text field, radio button, checkbox
-- Button dan submit
-- Semantic HTML (header, section, article, footer, dll)
-- Struktur HTML yang lebih terorganisir
+**STYLING & TATA LETAK**  
+Mempercantik tampilan website dengan CSS. Mulai dari selector, box model, hingga layouting yang responsif.
 
-🔗 [Link Materi](https://drive.google.com/file/d/12fZ7VVt2iHEYBC7iSQ5CE9CkNz6Ng1Hy/view?usp=sharing)
+**INTERAKTIVITAS**  
+Menghidupkan halaman web menggunakan JavaScript. Membuat website yang dinamis dan interaktif.
 
----
-
-### Pertemuan 4  
-**CSS Introduction, Selectors, Box Model**
-
-**Materi yang dipelajari:**
-- Dasar CSS
-- Cara menghubungkan CSS ke HTML
-- CSS Selectors
-- Box Model (margin, padding, border, content)
-- Styling dasar website
-
-🔗 [Link Materi](https://drive.google.com/file/d/1x0jmwSuJ-g3OZufQKRPWUqKyB-Qfzr54/view?usp=sharing)
+**CLIENT & SERVER**  
+Memahami bagaimana website bekerja. Konsep request-response, client-side vs server-side processing.
 
 ---
 
-© 2025 Pengembangan Aplikasi Web - Universitas 
+## DOSEN PENGAMPU
+
+---
+
+**AGUS SULAIMAN, S.KOM., M.T**  
+Dosen berpengalaman di bidang pengembangan web dan arsitektur sistem informasi.
+
+---
+
+## PERTEMUAN 1
+
+### PENGANTAR MATA KULIAH & DASAR HTML, CSS, JS
+
+**MATERI:**  
+Sistem perkuliahan • Kontrak kelas • Pengenalan HTML • Pengenalan CSS • Pengenalan JavaScript
+
+🔗 [LINK MATERI](https://drive.google.com/file/d/1ANa_sH1wAKQCn7mQO5sIKPLOUoQ0jO_3/view?usp=sharing)
+
+---
+
+## PERTEMUAN 2
+
+### BASIC TAGS, TEXT & LISTS, LINKS & IMAGES
+
+**MATERI:**  
+Struktur dasar HTML • Heading & paragraf • Ordered & unordered list • Anchor tag • Menampilkan gambar
+
+🔗 [LINK MATERI](https://drive.google.com/file/d/1-R9hFKWEZhjvFJ6Sjkqc_hPckqL5bSbl/view?usp=sharing)
+
+---
+
+## PERTEMUAN 3
+
+### FORMS & SEMANTIC HTML
+
+**MATERI:**  
+Form input • Text field • Radio button • Checkbox • Button • Semantic HTML (header, section, article, footer)
+
+🔗 [LINK MATERI](https://drive.google.com/file/d/12fZ7VVt2iHEYBC7iSQ5CE9CkNz6Ng1Hy/view?usp=sharing)
+
+---
+
+## PERTEMUAN 4
+
+### CSS INTRODUCTION, SELECTORS, BOX MODEL
+
+**MATERI:**  
+Dasar CSS • Menghubungkan CSS ke HTML • CSS Selectors • Box Model (margin, padding, border, content) • Styling dasar
+
+🔗 [LINK MATERI](https://drive.google.com/file/d/1x0jmwSuJ-g3OZufQKRPWUqKyB-Qfzr54/view?usp=sharing)
+
+---
+
+## STATISTIK REPOSITORI
+
+---
+
+**BAHASA PEMROGRAMAN:**  
+• HTML: 93.9%  
+• Python: 3.5%  
+• CSS: 1.4%  
+• JavaScript: 1.2%
+
+---
+
+## KONTRIBUTOR
+
+---
+
+**ZEROCOOL979**  
+*zerocool979*
+
+---
+
+© 2025 PENGEMBANGAN APLIKASI WEB - UNIVERSITAS
