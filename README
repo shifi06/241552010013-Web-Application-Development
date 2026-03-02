@@ -1,55 +1,117 @@
-# README
+# 📚 Pengembangan Aplikasi Web (Web Application Development)
 
-**Pengembangan Aplikasi Web** adalah mata kuliah yang mempelajari dasar hingga konsep pengembangan website dan aplikasi berbasis web. Mahasiswa akan membangun pemahaman tentang struktur HTML, styling dengan CSS, hingga interaktivitas menggunakan JavaScript. Alih-alih membuat website secara asal-asalan, mahasiswa akan belajar pendekatan terstruktur dalam membangun antarmuka web yang fungsional dan sesuai standar industri. Bayangkan ini seperti membangun fondasi digital yang kokoh untuk karir di dunia pengembangan web.
-
----
-
-## Apa tujuan dari mata kuliah ini?
-
-Tujuan utama dari mata kuliah ini adalah membekali mahasiswa dengan kemampuan membangun website dari nol hingga siap deploy. Mahasiswa akan belajar membuat halaman web yang tidak hanya tampil menarik, tetapi juga memiliki struktur kode yang rapi, semantik, dan mudah dipelihara. Pada akhirnya, mahasiswa diharapkan mampu mengembangkan portofolio website pribadi, memahami alur kerja frontend developer, dan siap melanjutkan ke teknologi web yang lebih kompleks seperti framework modern atau pemrograman backend. Mata kuliah ini mengubah kode mentah menjadi website nyata yang dapat digunakan dan dibagikan.
+Repository ini berisi rangkuman materi dan dokumentasi pembelajaran mata kuliah Pengembangan Aplikasi Web.
 
 ---
 
-## Bagaimana cara kerjanya?
+## 📖 Deskripsi Mata Kuliah
 
-Pada tingkat dasar, mahasiswa akan menulis kode HTML untuk membuat struktur halaman, menambahkan CSS untuk mempercantik tampilan, dan menggunakan JavaScript untuk menambahkan interaktivitas. Dalam praktiknya, setiap pertemuan dimulai dari konsep dasar, lalu dilanjutkan dengan studi kasus dan latihan langsung. Alurnya sederhana namun powerful: memahami materi → melihat contoh → mencoba sendiri → mendapatkan umpan balik → mengulangi. Ini seperti mengajarkan mahasiswa, "Ini teorinya, ini contohnya, sekarang coba buat versimu sendiri."
+Pengembangan Aplikasi Web (Web Application Development) adalah mata kuliah yang membahas dasar hingga konsep pengembangan website dan aplikasi berbasis web.
 
----
+Pada mata kuliah ini, mahasiswa akan mempelajari:
 
-## Kontributor
+- Struktur dasar halaman web menggunakan HTML
+- Styling dan tata letak menggunakan CSS
+- Interaktivitas menggunakan JavaScript
+- Konsep dasar cara kerja website (client-side & server-side)
+- Praktik pembuatan website sederhana hingga terstruktur
 
-**shifi06**  
-shifi06
+Mata kuliah ini menjadi fondasi penting bagi mahasiswa yang ingin mendalami bidang:
 
----
-
-## Bahasa
-
-- **HTML**: 96.2%
-- **CSS**: 3.8%
-
----
-
-## Rilis
-
-No releases published  
-Create a new release
+- Web Developer  
+- Frontend Developer  
+- Fullstack Developer  
 
 ---
 
-## Paket
+## 👨‍🏫 Dosen Pengampu
 
-No packages published  
-Publish your first package
+Agus Sulaiman, S.Kom., M.T
 
 ---
 
-## Alur Kerja yang Disarankan
+# 📅 Daftar Pertemuan
 
-Berdasarkan teknologi yang digunakan:
+---
 
-**Jekyll using Docker image**  
-Package a Jekyll site using the jekyll/builder Docker image.
+## 🟢 Pertemuan 1  
+### Pengantar Mata Kuliah, Kontrak Kuliah, dan Dasar HTML, CSS, JavaScript
 
-**SLSA Generic generator**  
-Configure
+**Materi yang dipelajari:**
+
+- Penjelasan sistem perkuliahan  
+- Kontrak dan aturan kelas  
+- Pengenalan HTML  
+- Pengenalan CSS  
+- Pengenalan JavaScript  
+
+🔗 Materi:  
+https://drive.google.com/file/d/1ANa_sH1wAKQCn7mQO5sIKPLOUoQ0jO_3/view?usp=sharing
+
+---
+
+## 🟢 Pertemuan 2  
+### Basic Tags, Text & Lists, Links & Images
+
+**Materi yang dipelajari:**
+
+- Struktur dasar HTML  
+- Tag heading dan paragraf  
+- Ordered list & unordered list  
+- Link (anchor tag)  
+- Menampilkan gambar pada website  
+
+🔗 Materi:  
+https://drive.google.com/file/d/1-R9hFKWEZhjvFJ6Sjkqc_hPckqL5bSbl/view?usp=sharing
+
+---
+
+## 🟢 Pertemuan 3  
+### Forms & Semantic HTML
+
+**Materi yang dipelajari:**
+
+- Membuat form input  
+- Text field, radio button, checkbox  
+- Button dan submit  
+- Semantic HTML (header, section, article, footer, dll)  
+- Struktur HTML yang lebih terorganisir  
+
+🔗 Materi:  
+https://drive.google.com/file/d/12fZ7VVt2iHEYBC7iSQ5CE9CkNz6Ng1Hy/view?usp=sharing
+
+---
+
+## 🟢 Pertemuan 4  
+### CSS Introduction, Selectors, Box Model
+
+**Materi yang dipelajari:**
+
+- Dasar CSS  
+- Cara menghubungkan CSS ke HTML  
+- CSS Selectors  
+- Box Model (margin, padding, border, content)  
+- Styling dasar website  
+
+🔗 Materi:  
+https://drive.google.com/file/d/1x0jmwSuJ-g3OZufQKRPWUqKyB-Qfzr54/view?usp=sharing
+
+---
+
+# 🎯 Tujuan Pembelajaran
+
+Setelah mengikuti mata kuliah ini, mahasiswa diharapkan mampu:
+
+- Memahami struktur dan sintaks dasar HTML, CSS, dan JavaScript  
+- Membuat website statis yang terstruktur dengan baik  
+- Mengimplementasikan desain tampilan menggunakan CSS  
+- Memahami konsep dasar interaktivitas web  
+- Membangun fondasi untuk pengembangan web yang lebih kompleks  
+
+---
+
+# 🚀 Penutup
+
+Repository ini akan terus diperbarui sesuai dengan perkembangan materi perkuliahan.
+
+Semoga dokumentasi ini membantu dalam proses belajar dan pengembangan skill di bidang Web Development.
