@@ -71,6 +71,26 @@ Materi yang dipelajari:
 - Box Model (margin, padding, border, content)
 - Styling dasar website
 
-
 🔗 Link Materi:  
 https://drive.google.com/file/d/1x0jmwSuJ-g3OZufQKRPWUqKyB-Qfzr54/view?usp=sharing
+
+
+## Pertemuan 6
+## Typography, Colors, dan Flexbox
+Materi yang dipelajari:
+- Pengertian Typography dalam web (readability, hierarchy, branding)
+- Jenis-jenis font (serif, sans-serif, monospace, cursive)
+- Cara menggunakan dan mengimpor font (Google Fonts)
+- Pengaturan teks di CSS (font-size, font-weight, line-height, letter-spacing)
+- Alignment, transformasi, dan dekorasi teks (text-align, text-transform, text-decoration)
+- Konsep dasar warna di CSS (HEX, RGB, RGBA, HSL)
+- Cara kerja warna HEX dan transparansi
+- Penggunaan CSS Variables untuk manajemen warna
+- Konsep dasar Flexbox (container vs item, main axis & cross axis)
+- Properti Flexbox pada container (flex-direction, justify-content, align-items, flex-wrap, gap)
+- Properti Flexbox pada item (flex-grow, flex-shrink, flex-basis, order, align-self)
+- Penerapan Flexbox dalam layout (navbar, hero section, sidebar, card responsive)
+- Studi kasus dan mini project layout menggunakan Flexbox
+
+🔗 Link Materi:
+https://drive.google.com/file/d/1e4z3ToHD7LB89R_ztsX_e8PA3pQCAIfJ/view?usp=sharing
