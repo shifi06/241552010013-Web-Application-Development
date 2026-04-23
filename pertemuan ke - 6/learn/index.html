@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar CSS - Typography, Colors, Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- NAVBAR - Linknya sudah berfungsi -->
+    <nav class="navbar">
+        <div class="logo">📚 BelajarCSS</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="#profile-section">Typography</a></li>
+            <li><a href="#pricing-section">Warna</a></li>
+            <li><a href="#blog-section">Flexbox</a></li>
+        </ul>
+        <button class="cta-button" onclick="alert('Halo! Terima kasih sudah belajar CSS bersama 🎉')">Mulai</button>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="badge">Pemula Friendly</span>
+            <h1 class="hero-title">Belajar CSS Dari Nol</h1>
+            <p class="hero-text">Typography, Colors, dan Flexbox — 3 pilar penting buat bikin web yang keren dan rapi.</p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="alert('Yuk mulai belajar! Scroll ke bawah ya 📖')">Mulai Belajar Gratis</button>
+                <button class="btn-secondary" onclick="location.href='#blog-section'">Lihat Kurikulum</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION PROFILE CARD (Typography) -->
+    <section id="profile-section" class="section">
+        <h2 class="section-title">📇 Typography & Profile Card</h2>
+        <p class="section-desc">Pakai <strong>font-family: Poppins</strong>, <strong>line-height: 1.6</strong>, dan <strong>flex-direction: column</strong></p>
+        
+        <div class="cards-container">
+            <div class="profile-card">
+                <div class="avatar">RA</div>
+                <h3>Rafi Ahmad</h3>
+                <p class="role">Frontend Learner</p>
+                <div class="stats">
+                    <div><strong>23</strong><span>Posts</span></div>
+                    <div><strong>890</strong><span>Followers</span></div>
+                    <div><strong>145</strong><span>Following</span></div>
+                </div>
+                <button class="follow-btn" onclick="alert('Follow ' + this.parentElement.querySelector('h3').innerText + '? (Demo)')">Follow</button>
+            </div>
+            
+            <div class="profile-card">
+                <div class="avatar" style="background: #FF6B6B;">EW</div>
+                <h3>Emma Waston</h3>
+                <p class="role">UI/UX Beginner</p>
+                <div class="stats">
+                    <div><strong>56</strong><span>Posts</span></div>
+                    <div><strong>2.1k</strong><span>Followers</span></div>
+                    <div><strong>320</strong><span>Following</span></div>
+                </div>
+                <button class="follow-btn" onclick="alert('Follow Siti? (Demo)')">Follow</button>
+            </div>
+            
+            <div class="profile-card">
+                <div class="avatar" style="background: #4ECDC4;">MF</div>
+                <h3>Michael Faraday</h3>
+                <p class="role">CSS Enthusiast</p>
+                <div class="stats">
+                    <div><strong>112</strong><span>Posts</span></div>
+                    <div><strong>3.4k</strong><span>Followers</span></div>
+                    <div><strong>567</strong><span>Following</span></div>
+                </div>
+                <button class="follow-btn" onclick="alert('Follow Budi? (Demo)')">Follow</button>
+            </div>
+        </div>
+        
+        <!-- Catatan belajar -->
+        <div style="background: #e9ecef; padding: 16px; border-radius: 12px; margin-top: 32px;">
+            <h4>📝 Catatan Typography (dari materi)</h4>
+            <p>✅ Gunakan <code>rem</code> bukan <code>px</code> untuk font-size → lebih aksesibel<br>
+            ✅ <code>line-height: 1.6</code> bikin teks nyaman dibaca<br>
+            ✅ Font stack: <code>'Poppins', Arial, sans-serif</code> → fallback kalau font gagal dimuat<br>
+            ✅ Maksimal 2-3 jenis font per proyek</p>
+        </div>
+    </section>
+
+    <!-- SECTION PRICING CARDS (Warna CSS) -->
+    <section id="pricing-section" class="section">
+        <h2 class="section-title">🎨 Warna CSS & Pricing Cards</h2>
+        <p class="section-desc">Pakai <strong>CSS Variables</strong>, <strong>HEX (#)</strong>, dan <strong>RGBA</strong> untuk transparansi</p>
+        
+        <div class="pricing-container">
+            <div class="pricing-card">
+                <h3>Pemula</h3>
+                <div class="price">Gratis</div>
+                <ul class="features">
+                    <li>✓ 5 Proyek belajar</li>
+                    <li>✓ 1 GB storage</li>
+                    <li>✓ Community support</li>
+                    <li>✗ Prioritas dukungan</li>
+                </ul>
+                <button class="price-btn" onclick="alert('Pilih paket Pemula (Gratis) 🎉')">Mulai Gratis</button>
+            </div>
+            
+            <div class="pricing-card featured">
+                <div class="popular-badge">⭐ Paling Populer</div>
+                <h3>Pro</h3>
+                <div class="price">Rp99rb<span>/bulan</span></div>
+                <ul class="features">
+                    <li>✓ Unlimited proyek</li>
+                    <li>✓ 50 GB storage</li>
+                    <li>✓ Prioritas support 24/7</li>
+                    <li>✓ Sertifikat kelulusan</li>
+                </ul>
+                <button class="price-btn" onclick="alert('Pilih paket Pro Rp99rb/bulan (Demo) 💎')">Langganan Sekarang</button>
+            </div>
+            
+            <div class="pricing-card">
+                <h3>Tim</h3>
+                <div class="price">Rp249rb<span>/bulan</span></div>
+                <ul class="features">
+                    <li>✓ Semua fitur Pro</li>
+                    <li>✓ 200 GB storage</li>
+                    <li>✓ Admin dashboard</li>
+                    <li>✓ API akses</li>
+                </ul>
+                <button class="price-btn" onclick="alert('Hubungi tim sales (Demo) 📞')">Hubungi Sales</button>
+            </div>
+        </div>
+        
+        <!-- Catatan belajar warna -->
+        <div style="background: #e9ecef; padding: 16px; border-radius: 12px; margin-top: 32px;">
+            <h4>🎨 Catatan Warna CSS (dari materi)</h4>
+            <p>✅ <strong>HEX</strong>: <code style="background:#3A86FF; color:white; padding:2px 6px;">#3A86FF</code> — paling umum<br>
+            ✅ <strong>RGB/RGBA</strong>: <code>rgba(58,134,255,0.5)</code> — transparansi 50%<br>
+            ✅ <strong>HSL</strong>: <code>hsl(217°,100%,61%)</code> — paling mudah dipahami manusia<br>
+            ✅ <strong>CSS Variables</strong>: <code>--primary: #3A86FF</code> → ganti 1 tempat semua berubah!<br>
+            ✅ Kontras WCAG: teks di atas background butuh rasio ≥ 4.5:1</p>
+        </div>
+    </section>
+
+    <!-- SECTION BLOG LAYOUT (Flexbox) -->
+    <section id="blog-section" class="section">
+        <h2 class="section-title">🔲 Flexbox & Layout 2 Kolom</h2>
+        <p class="section-desc">Pakai <strong>flex: 3</strong> dan <strong>flex: 1</strong> untuk rasio lebar, plus <strong>gap</strong> untuk jarak</p>
+        
+        <div class="blog-layout">
+            <article class="blog-content">
+                <h1>Panduan Flexbox untuk Pemula Banget</h1>
+                <p class="blog-meta">17 April 2026 · 5 menit baca</p>
+                <p>Flexbox itu singkatan dari Flexible Box Module. Analogi gampangnya: <strong>bayangin rak toko</strong>. Kamu punya rak (container) dan barang-barang (item).</p>
+                <h2>Properti Flexbox yang Wajib Tahu</h2>
+                <p><code>display: flex</code> → mengaktifkan flexbox di parent.<br>
+                <code>justify-content</code> → ngatur posisi horizontal (kiri, kanan, tengah, nyebar).<br>
+                <code>align-items</code> → ngatur posisi vertikal (atas, bawah, tengah).<br>
+                <code>gap</code> → kasih jarak antar item, lebih bersih dari margin.<br>
+                <code>flex: 1</code> → item mengambil sisa ruang kosong.</p>
+                <p><strong>Contoh navbar:</strong> <code>justify-content: space-between</code> bikin logo di kiri, menu di kanan.</p>
+            </article>
+            
+            <aside class="blog-sidebar">
+                <div class="widget">
+                    <h3>📚 Materi Terkait</h3>
+                    <ul class="related-list">
+                        <li><a href="#" onclick="alert('CSS Grid akan dipelajari nanti!'); return false;">CSS Grid vs Flexbox</a></li>
+                        <li><a href="#" onclick="alert('Media Queries untuk responsive design'); return false;">Media Queries</a></li>
+                        <li><a href="#" onclick="alert('Typography: font, spacing, hierarchy'); return false;">Tips Typography</a></li>
+                    </ul>
+                </div>
+                <div class="widget">
+                    <h3>⭐ Intisari Flexbox</h3>
+                    <p><strong>Container (parent):</strong><br>
+                    • <code>display: flex</code><br>
+                    • <code>justify-content</code> (main axis)<br>
+                    • <code>align-items</code> (cross axis)<br>
+                    • <code>gap</code> (jarak antar item)</p>
+                    <p><strong>Item (child):</strong><br>
+                    • <code>flex: 1</code> (tumbuh ambil ruang)<br>
+                    • <code>order</code> (ubah urutan visual)<br>
+                    • <code>align-self</code> (override align-items)</p>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>Dibuat untuk belajar CSS — Typography, Colors, Flexbox</p>
+        <p><small>Berdasarkan materi dari file belajar • 2026</small></p>  
+    </footer>
+
+    <!-- Tambahan CSS kecil biar smooth scroll -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .related-list a, .nav-links a {
+            cursor: pointer;
+        }
+    </style>
+
+</body>
+</html>

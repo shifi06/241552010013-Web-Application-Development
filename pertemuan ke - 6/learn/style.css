@@ -1,0 +1,666 @@
+/* ============================================
+   BELAJAR CSS DARI MATERI
+   Typography, Colors, Flexbox
+   
+   CATATAN PENTING DARI MATERI:
+   1. Gunakan rem, bukan px buat font-size (lebih aksesibel)
+   2. Font stack: font spesifik dulu, baru generic (Poppins, sans-serif)
+   3. line-height: 1.5-1.6 buat teks body (biar gak rapet)
+   4. CSS variables itu life saver buat warna
+   5. display: flex pada PARENT, justify-content = main axis
+   ============================================ */
+
+/* ---------- ROOT: Tempat CSS Variables (materi halaman 13) ---------- */
+/* 
+   BELAJAR: Variabel CSS didefinisikan di :root
+   Cara pakenya: var(--nama-variabel)
+   Keuntungan: ganti di 1 tempat, semua komponen berubah!
+*/
+:root {
+    /* Warna Primer (60-30-10 rule dari materi: 60% dominan) */
+    --primary: #3A86FF;
+    --primary-dark: #2B6BD4;
+    --primary-light: #7AB0FF;
+    
+    /* Warna Sekunder (30% area) */
+    --secondary: #FFD660;
+    --secondary-dark: #E6B800;
+    
+    /* Warna Aksen (10% untuk tombol/link penting) */
+    --accent: #FF6B6B;
+    
+    /* Warna Netral (background & teks) */
+    --bg-white: #FFFFFF;
+    --bg-light: #F8F9FA;
+    --bg-dark: #1A1A2E;
+    --text-dark: #2D3436;
+    --text-gray: #636E72;
+    --text-light: #B2BEC3;
+    --text-white: #FFFFFF;
+    
+    /* Typography scale (materi halaman 6 - pakai REM) */
+    --font-base: 16px;      /* 1rem = 16px */
+    --font-small: 0.875rem; /* 14px */
+    --font-body: 1rem;       /* 16px */
+    --font-h4: 1.25rem;      /* 20px */
+    --font-h3: 1.5rem;       /* 24px */
+    --font-h2: 2rem;         /* 32px */
+    --font-h1: 2.5rem;       /* 40px */
+    
+    /* Spacing */
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 48px;
+    
+    /* Border radius */
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-full: 50%;
+}
+
+/* ---------- GLOBAL STYLES & TYPOGRAPHY RESET (materi halaman 9) ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+   MATERI HALAMAN 6: font-size pake REM
+   :root { font-size: 16px } → 1rem = 16px
+   Ini lebih aksesibel karena bisa menyesuaikan setting browser user
+*/
+html {
+    font-size: 16px; /* base: 1rem = 16px */
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+    /* 
+        MATERI HALAMAN 4: font stack
+        'Poppins' → spesifik, kalo gagal → 'Segoe UI', kalo gagal lagi → Arial, 
+        kalo semua gagal → browser pake sans-serif default
+    */
+    
+    font-size: var(--font-body);      /* 1rem = 16px */
+    font-weight: 400;                  /* normal */
+    line-height: 1.6;                  /* MATERI HALAMAN 7: 1.5-1.6 ideal buat body teks */
+    color: var(--text-dark);
+    background-color: var(--bg-white);
+}
+
+/* Typography untuk headings (pake skala dari materi halaman 9) */
+h1 {
+    font-size: var(--font-h1);      /* 2.5rem = 40px */
+    font-weight: 700;                /* bold */
+    line-height: 1.2;                /* lebih rapet biar heading gak kepisah jauh */
+    margin-bottom: var(--space-md);
+}
+
+h2 {
+    font-size: var(--font-h2);      /* 2rem = 32px */
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+}
+
+h3 {
+    font-size: var(--font-h3);      /* 1.5rem = 24px */
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+}
+
+h4 {
+    font-size: var(--font-h4);      /* 1.25rem = 20px */
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+}
+
+p {
+    margin-bottom: 1em;              /* 1em = 16px relative ke font-size parent */
+}
+
+/* MATERI HALAMAN 7: letter-spacing untuk readability */
+.logo, h1, h2, h3 {
+    letter-spacing: -0.5px;          /* dikit lebih rapet biar keliatan modern */
+}
+
+/* ---------- NAVBAR (materi halaman 18 & 22) ---------- */
+/*
+   MATERI FLEXBOX HALAMAN 18: Pola Navbar
+   - display: flex
+   - justify-content: space-between → logo di kiri, nav links di tengah?? 
+     TAPI di contoh ini: logo kiri, nav links kanan, tombol paling kanan
+     Kita pake space-between buat pisahin logo dan group (nav+tombol)
+*/
+.navbar {
+    display: flex;
+    align-items: center;              /* tengah secara vertikal */
+    justify-content: space-between;   /* space between: ujung kiri dan ujung kanan */
+    padding: 0 32px;                  /* kiri-kanan 32px */
+    height: 70px;
+    background: var(--bg-dark);
+    background: linear-gradient(135deg, #1A1A2E 0%, #16213E 100%);
+}
+
+.logo {
+    font-size: 1.25rem;               /* 20px */
+    font-weight: 700;
+    color: var(--secondary);
+    letter-spacing: -0.5px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;                        /* jarak antar link */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: var(--secondary);
+}
+
+.cta-button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: background 0.2s;
+}
+
+.cta-button:hover {
+    background: var(--primary-dark);
+}
+
+/* ---------- HERO SECTION (materi halaman 18 - tengah sempurna) ---------- */
+/*
+   MATERI HALAMAN 18: Pola Tengah Sempurna (Perfect Centering)
+   Untuk nengahkan elemen horizontal DAN vertikal:
+   display: flex;
+   justify-content: center; (horizontal)
+   align-items: center;      (vertikal)
+   min-height: 100vh;        (biar full screen)
+*/
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;                 /* 80% tinggi layar, gak full biar liat section lain */
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    text-align: center;
+    padding: var(--space-xl);
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+    padding: 6px 16px;
+    border-radius: 40px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: var(--space-md);
+}
+
+.hero-title {
+    font-size: 3rem;                  /* 48px — lebih besar dari default h1 */
+    font-weight: 800;                 /* MATERI HALAMAN 7: font-weight 800 = Extra Bold */
+    color: white;
+    margin-bottom: var(--space-md);
+    line-height: 1.2;
+}
+
+.hero-text {
+    font-size: 1.125rem;              /* 18px */
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: var(--space-lg);
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: var(--space-md);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-primary {
+    background: var(--secondary);
+    color: var(--bg-dark);
+    border: none;
+    padding: 12px 28px;
+    border-radius: 40px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.btn-primary:hover {
+    background: var(--secondary-dark);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 26px;
+    border-radius: 40px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+/* ---------- SECTION UMUM ---------- */
+.section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--space-xl) var(--space-lg);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: var(--space-sm);
+    font-size: var(--font-h2);
+}
+
+.section-desc {
+    text-align: center;
+    color: var(--text-gray);
+    margin-bottom: var(--space-xl);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ---------- PROFILE CARDS (materi halaman 21) ---------- */
+/*
+   MATERI HALAMAN 21: Profile Card
+   - flex-direction: column (biar item susun ke bawah)
+   - align-items: center (biar di tengah horizontal)
+   - gap untuk jarak
+*/
+.cards-container {
+    display: flex;
+    gap: var(--space-lg);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.profile-card {
+    background: var(--bg-light);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    text-align: center;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    background: var(--primary);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.profile-card h3 {
+    margin-bottom: 0;
+    margin-top: var(--space-sm);
+}
+
+.role {
+    color: var(--text-gray);
+    font-size: var(--font-small);
+    margin-bottom: var(--space-sm);
+}
+
+.stats {
+    display: flex;
+    gap: var(--space-lg);
+    margin: var(--space-sm) 0;
+}
+
+.stats div {
+    text-align: center;
+}
+
+.stats strong {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.stats span {
+    font-size: 0.7rem;
+    color: var(--text-gray);
+}
+
+.follow-btn {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 8px 32px;
+    border-radius: 40px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.2s;
+}
+
+.follow-btn:hover {
+    background: var(--primary-dark);
+}
+
+/* ---------- BLOG LAYOUT 2 KOLOM (materi halaman 25) ---------- */
+/*
+   MATERI HALAMAN 25: Layout 2 kolom
+   - .blog-layout { display: flex; gap: 48px; }
+   - .blog-content { flex: 3 } (mengambil 3 bagian dari total 4 bagian)
+   - .blog-sidebar { flex: 1 } (mengambil 1 bagian)
+   
+   Rumus: total flex = 3+1 = 4 bagian
+   Konten = 3/4 dari lebar, Sidebar = 1/4 dari lebar
+*/
+.blog-layout {
+    display: flex;
+    gap: 48px;
+    background: var(--bg-light);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+}
+
+.blog-content {
+    flex: 3;
+}
+
+.blog-sidebar {
+    flex: 1;
+}
+
+.blog-content h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.blog-meta {
+    font-size: 0.85rem;
+    color: var(--text-gray);
+    margin-bottom: var(--space-lg);
+    border-bottom: 1px solid #ddd;
+    padding-bottom: var(--space-md);
+}
+
+.blog-content p {
+    line-height: 1.7;      /* MATERI HALAMAN 7: 1.7 sangat nyaman dibaca */
+    margin-bottom: 1.2em;
+    color: var(--text-dark);
+}
+
+.blog-content h2 {
+    font-size: 1.5rem;
+    margin-top: var(--space-lg);
+}
+
+code {
+    background: #e9ecef;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 0.9em;
+}
+
+.widget {
+    background: white;
+    border-radius: var(--radius-md);
+    padding: var(--space-lg);
+    margin-bottom: var(--space-lg);
+}
+
+.widget h3 {
+    font-size: 1.1rem;
+    margin-bottom: var(--space-md);
+    border-left: 3px solid var(--primary);
+    padding-left: var(--space-sm);
+}
+
+.related-list {
+    list-style: none;
+    padding: 0;
+}
+
+.related-list li {
+    margin-bottom: 10px;
+}
+
+.related-list a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.related-list a:hover {
+    text-decoration: underline;
+}
+
+.widget p {
+    font-size: 0.9rem;
+    margin-bottom: var(--space-sm);
+}
+
+/* ---------- PRICING CARDS (materi halaman 24) ---------- */
+/*
+   MATERI HALAMAN 24: Pricing Cards
+   Konsep penting:
+   1. .pricing-container { display: flex; align-items: stretch; gap: 24px }
+      align-items: stretch → semua kartu punya tinggi yang sama (default flex)
+   2. .pricing-card button { margin-top: auto } → tombol dorong ke bawah terlepas dari isi
+*/
+.pricing-container {
+    display: flex;
+    gap: var(--space-lg);
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    flex: 1;
+    min-width: 250px;
+    background: var(--bg-light);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* MATERI HALAMAN 24: featured card pake transform: scale(1.05) */
+.pricing-card.featured {
+    background: var(--bg-dark);
+    color: white;
+    transform: scale(1.05);
+    border: 2px solid var(--secondary);
+}
+
+.pricing-card.featured .price {
+    color: var(--secondary);
+}
+
+.popular-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--secondary);
+    color: var(--bg-dark);
+    padding: 4px 16px;
+    border-radius: 40px;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.pricing-card h3 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    color: var(--primary);
+}
+
+.price span {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.pricing-card.featured .price span {
+    color: var(--text-light);
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin: var(--space-sm) 0;
+}
+
+.features li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.pricing-card.featured .features li {
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.price-btn {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: var(--radius-sm);
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    margin-top: auto;        /* MATERI HALAMAN 24: tombol selalu di bawah! */
+    transition: background 0.2s;
+}
+
+.price-btn:hover {
+    background: var(--primary-dark);
+}
+
+.pricing-card.featured .price-btn {
+    background: var(--secondary);
+    color: var(--bg-dark);
+}
+
+/* ---------- FOOTER ---------- */
+.footer {
+    background: var(--bg-dark);
+    color: var(--text-light);
+    text-align: center;
+    padding: var(--space-xl);
+    margin-top: var(--space-xl);
+}
+
+.footer p {
+    margin-bottom: var(--space-sm);
+}
+
+/* ---------- RESPONSIVE (biar gak hancur di HP) ---------- */
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;     /* di HP, base font lebih kecil */
+    }
+    
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: var(--space-md);
+        gap: var(--space-md);
+    }
+    
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--space-md);
+    }
+    
+    .blog-layout {
+        flex-direction: column;
+    }
+    
+    .pricing-container {
+        flex-direction: column;
+    }
+    
+    .pricing-card.featured {
+        transform: scale(1);
+        order: -1;           /* featured card pindah ke atas pake order */
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .section {
+        padding: var(--space-lg);
+    }
+}
