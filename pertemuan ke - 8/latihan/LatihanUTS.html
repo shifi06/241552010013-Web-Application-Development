@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tazkia Studio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">Tazkia Studio</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <h1>We Design <span>Digital Products</span> People Love</h1>
+    <p>A creative studio in Bogor helping startups and businesses build<br />better software.</p>
+    <button class="btn-primary">Get Started</button>
+    <button class="btn-outline">Learn More</button>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <img
+      src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=500"
+      alt="Hutan bambu"
+    />
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p>
+        Tazkia Studio was founded in 2020 by a group of designers and
+        developers who wanted to build products with purpose. We are a
+        small team of 12 people who care deeply about quality.
+      </p>
+      <p>We value:</p>
+      <ul>
+        <li>Good design over flashy design</li>
+        <li>Simple code over clever code</li>
+        <li>Happy users over happy managers</li>
+      </ul>
+      <h3>Our Journey</h3>
+      <ol>
+        <li>2020 — Founded in Bogor</li>
+        <li>2021 — First product launch</li>
+        <li>2023 — 30+ clients served</li>
+        <li>2025 — Opened remote team</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <h2>Services</h2>
+    <p class="subtitle">Here is what we can do for you.</p>
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="icon">💻</div>
+        <h3>Web Design</h3>
+        <p>Clean, fast websites that look great on any device.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">📱</div>
+        <h3>Mobile Apps</h3>
+        <p>Simple apps for Android and iOS that users enjoy.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">🔍</div>
+        <h3>UX Research</h3>
+        <p>We interview real users so we build the right thing.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">⚙️</div>
+        <h3>Backend Dev</h3>
+        <p>Reliable APIs and databases powering your product.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">🎨</div>
+        <h3>Branding</h3>
+        <p>Logo, colors, and type that make your brand memorable.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">🚀</div>
+        <h3>Launch Support</h3>
+        <p>We stay with you after launch to fix bugs and grow.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section id="team">
+    <h2>Meet the Team</h2>
+    <p class="subtitle">The people behind the work.</p>
+    <div class="team-grid">
+
+      <div class="team-card">
+        <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100" alt="Aldi Nugroho" />
+        <h3>Aldi Nugroho</h3>
+        <p class="role">Co-Founder &amp; CEO</p>
+        <p>Loves bold ideas and good coffee.</p>
+      </div>
+
+      <div class="team-card">
+        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100" alt="Lina Kusuma" />
+        <h3>Lina Kusuma</h3>
+        <p class="role">Head of Design</p>
+        <p>Turns problems into pixels.</p>
+      </div>
+
+      <div class="team-card">
+        <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=100" alt="Fajar Hidayat" />
+        <h3>Fajar Hidayat</h3>
+        <p class="role">Lead Developer</p>
+        <p>Clean code every time, no excuses.</p>
+      </div>
+
+      <div class="team-card">
+        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100" alt="Nadia Putri" />
+        <h3>Nadia Putri</h3>
+        <p class="role">Project Manager</p>
+        <p>Deadlines are her love language.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-box">
+      <h2>Send Us a Message</h2>
+      <p class="subtitle">We will get back to you within 24 hours.</p>
+
+      <div class="form-group">
+        <label for="nama">Name</label>
+        <input type="text" id="nama" placeholder="Your full name" />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="you@email.com" />
+      </div>
+
+      <div class="form-group">
+        <label for="topic">Topic</label>
+        <select id="topic">
+          <option value="">Select a topic</option>
+          <option value="web">Web Design</option>
+          <option value="app">Mobile Apps</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="pesan">Message</label>
+        <textarea id="pesan" placeholder="Write your message here..."></textarea>
+      </div>
+
+      <div class="checkbox-group">
+        <input type="checkbox" id="agree" />
+        <label for="agree">I agree to be contacted by Tazkia Studio</label>
+      </div>
+
+      <button class="btn-submit">Send Message</button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">Tazkia Studio</div>
+    <p>Jl. Sudirman No. 88, Bogor — hello@tazkiastudio.id</p>
+    <div class="footer-links">
+      <a href="#">Instagram</a> —
+      <a href="#">LinkedIn</a>
+    </div>
+    <p>&copy; 2025 Tazkia Studio. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
