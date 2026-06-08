@@ -1,0 +1,128 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #f0f0f0;
+  --panel: #ffffff;
+  --kartu: #f8f8f8;
+  --teks: #111;
+  --border: #ddd;
+}
+.gelap {
+  --bg: #1e1e2e;
+  --panel: #28283c;
+  --kartu: #32324a;
+  --teks: #ffffff;
+  --border: #444;
+}
+
+body {
+  font-family: sans-serif;
+  background: var(--bg);
+  color: var(--teks);
+  transition: background 0.4s, color 0.4s;
+  min-height: 100vh;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background: var(--panel);
+  border-bottom: 1px solid var(--border);
+  transition: background 0.4s;
+}
+#theme-btn, #theme-btn-2 {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #7c5cfc;
+  color: white;
+  cursor: pointer;
+}
+
+/* TAB NAV */
+.tab-nav {
+  display: flex;
+  gap: 0;
+  background: var(--panel);
+  border-bottom: 1px solid var(--border);
+  padding: 0 24px;
+  transition: background 0.4s;
+}
+.tombol-tab {
+  padding: 14px 20px;
+  border: none;
+  background: transparent;
+  color: var(--teks);
+  cursor: pointer;
+  opacity: 0.5;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s;
+  font-size: 15px;
+}
+.tombol-tab.aktif { opacity: 1; border-bottom-color: #f7df1e; }
+
+/* PANEL */
+.panel     { display: none; padding: 24px; }
+.panel.aktif { display: block; }
+
+/* GRID STATISTIK */
+.grid-statistik {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+}
+.kartu-stat {
+  background: var(--kartu);
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  transition: background 0.4s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.kartu-stat h3 { font-size: 36px; color: #7c5cfc; margin-bottom: 8px; }
+.kartu-stat p  { opacity: 0.6; font-size: 14px; }
+
+/* ACCORDION */
+.item {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.judul-akordion {
+  width: 100%;
+  padding: 14px 18px;
+  text-align: left;
+  background: var(--kartu);
+  color: var(--teks);
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background 0.2s;
+}
+.judul-akordion:hover { background: var(--border); }
+.konten-akordion {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+.konten-akordion p {
+  padding: 14px 18px;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+.item.terbuka .konten-akordion { max-height: 200px; }
+
+/* PENGATURAN */
+.kartu-setting {
+  background: var(--kartu);
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.4s;
+}

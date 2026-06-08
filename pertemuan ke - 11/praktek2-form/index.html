@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Registrasi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- TOMBOL DARK MODE di pojok kanan atas -->
+  <button id="theme-btn">🌙 Mode Gelap</button>
+
+  <div class="wrapper">
+    <h2>📝 Daftar Akun</h2>
+
+    <form id="formulir">
+
+      <div class="field">
+        <label>Nama Lengkap</label>
+        <input id="nama" type="text" placeholder="Minimal 3 karakter">
+        <span class="pesan-error"></span>
+      </div>
+
+      <div class="field">
+        <label>Alamat Email</label>
+        <input id="email" type="email" placeholder="contoh@email.com">
+        <span class="pesan-error"></span>
+      </div>
+
+      <div class="field">
+        <label>Password</label>
+        <input id="password" type="password" placeholder="Minimal 8 karakter">
+        <div class="bilah"><div class="isian"></div></div>
+        <div class="strength-label" id="strength-label"></div>
+        <span class="pesan-error"></span>
+      </div>
+
+      <button type="submit">Daftar Sekarang →</button>
+
+    </form>
+
+    <div id="sukses" class="tersembunyi">
+      ✅ Pendaftaran berhasil!
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

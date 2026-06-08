@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1>📊 Dashboard</h1>
+    <button id="theme-btn">🌙 Mode Gelap</button>
+  </header>
+
+  <!-- TAB NAVIGATION -->
+  <nav class="tab-nav">
+    <button class="tombol-tab aktif" data-tab="ikhtisar">Ikhtisar</button>
+    <button class="tombol-tab"       data-tab="faq">FAQ</button>
+    <button class="tombol-tab"       data-tab="pengaturan">Pengaturan</button>
+  </nav>
+
+  <!-- PANEL IKHTISAR -->
+  <section id="ikhtisar" class="panel aktif">
+    <div class="grid-statistik">
+      <div class="kartu-stat" data-target="1200">
+        <h3 class="penghitung">0</h3>
+        <p>Total Pengguna</p>
+      </div>
+      <div class="kartu-stat" data-target="340">
+        <h3 class="penghitung">0</h3>
+        <p>Produk Terjual</p>
+      </div>
+      <div class="kartu-stat" data-target="58">
+        <h3 class="penghitung">0</h3>
+        <p>Transaksi Hari Ini</p>
+      </div>
+      <div class="kartu-stat" data-target="92">
+        <h3 class="penghitung">0</h3>
+        <p>% Kepuasan</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PANEL FAQ (ACCORDION) -->
+  <section id="faq" class="panel">
+    <h2 style="margin-bottom:16px">❓ FAQ</h2>
+
+    <div class="item">
+      <button class="judul-akordion">Apa itu dashboard ini?</button>
+      <div class="konten-akordion">
+        <p>Dashboard ini adalah contoh implementasi komponen UI interaktif menggunakan HTML, CSS, dan JavaScript murni tanpa framework.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <button class="judul-akordion">Bagaimana cara menggunakan dark mode?</button>
+      <div class="konten-akordion">
+        <p>Klik tombol "Mode Gelap" di pojok kanan atas. Preferensi akan tersimpan otomatis dan tetap aktif saat halaman di-refresh.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <button class="judul-akordion">Apakah data tersimpan?</button>
+      <div class="konten-akordion">
+        <p>Pada versi demo ini, data tidak tersimpan ke server. Hanya preferensi tema yang disimpan via localStorage.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PANEL PENGATURAN -->
+  <section id="pengaturan" class="panel">
+    <h2 style="margin-bottom:16px">⚙️ Pengaturan</h2>
+    <div class="kartu-setting">
+      <p>Tema Tampilan</p>
+      <button id="theme-btn-2">Toggle Dark Mode</button>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

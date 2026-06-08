@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Galeri Filter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <h2>🖼️ Galeri Foto</h2>
+
+    <div class="filter-btns">
+      <button class="filter active" data-cat="all">Semua</button>
+      <button class="filter" data-cat="alam">Alam</button>
+      <button class="filter" data-cat="kota">Kota</button>
+      <button class="filter" data-cat="kuliner">Kuliner</button>
+    </div>
+
+    <div class="gallery" id="gallery">
+      <div class="card" data-cat="alam">
+        <div class="thumb alam"></div>
+        <p>Gunung Bromo</p>
+      </div>
+      <div class="card" data-cat="kota">
+        <div class="thumb kota"></div>
+        <p>Jakarta Malam</p>
+      </div>
+      <div class="card" data-cat="kuliner">
+        <div class="thumb kuliner"></div>
+        <p>Soto Ayam</p>
+      </div>
+      <div class="card" data-cat="alam">
+        <div class="thumb alam2"></div>
+        <p>Pantai Bali</p>
+      </div>
+      <div class="card" data-cat="kota">
+        <div class="thumb kota2"></div>
+        <p>Surabaya Siang</p>
+      </div>
+      <div class="card" data-cat="kuliner">
+        <div class="thumb kuliner2"></div>
+        <p>Rendang Padang</p>
+      </div>
+    </div>
+  </div>
+  <script src="gallery.js"></script>
+</body>
+</html>

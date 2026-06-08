@@ -1,0 +1,65 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #f0f0f0;
+  --kartu: #ffffff;
+  --teks: #111111;
+}
+
+.gelap {
+  --bg: #1e1e2e;
+  --kartu: #28283c;
+  --teks: #ffffff;
+}
+
+body {
+  font-family: sans-serif;
+  background: var(--bg);
+  color: var(--teks);
+  transition: background 0.4s, color 0.4s;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#theme-btn {
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #7c5cfc;
+  color: white;
+  font-size: 15px;
+}
+
+.kartu {
+  background: var(--kartu);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 16px;
+  text-align: center;
+  transition: background 0.4s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #f7df1e;
+  margin: 0 auto 16px;
+  animation: muncul 0.5s ease;
+}
+
+@keyframes muncul {
+  from { transform: scale(0); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+h2 { font-size: 40px; margin-bottom: 8px; }
+p  { opacity: 0.6; }

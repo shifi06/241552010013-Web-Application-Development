@@ -1,0 +1,41 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: sans-serif;
+  background: #1e1e2e;
+  color: white;
+  padding: 40px 16px;
+}
+.app { max-width: 700px; margin: 0 auto; }
+h2 { margin-bottom: 20px; }
+
+.filter-btns { display: flex; gap: 8px; margin-bottom: 24px; flex-wrap: wrap; }
+.filter {
+  padding: 8px 18px;
+  border: none;
+  border-radius: 20px;
+  background: #2e2e3e;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.filter.active { background: #f7df1e; color: #111; }
+
+.gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+
+.card {
+  background: #28283c;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: opacity 0.3s, transform 0.3s;
+}
+.card.hidden { display: none; }
+.card p { padding: 8px 10px; font-size: 14px; }
+
+/* Placeholder warna pengganti gambar */
+.thumb { height: 120px; }
+.alam    { background: linear-gradient(135deg, #2ecc71, #27ae60); }
+.alam2   { background: linear-gradient(135deg, #00b4db, #0083b0); }
+.kota    { background: linear-gradient(135deg, #f7971e, #ffd200); }
+.kota2   { background: linear-gradient(135deg, #fc4a1a, #f7b733); }
+.kuliner { background: linear-gradient(135deg, #ee0979, #ff6a00); }
+.kuliner2{ background: linear-gradient(135deg, #8e44ad, #3498db); }

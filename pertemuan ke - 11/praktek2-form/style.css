@@ -1,0 +1,186 @@
+/* ===== CSS VARIABLES (tema terang default) ===== */
+:root {
+  --bg: #f0f0f5;
+  --wrapper-bg: #ffffff;
+  --teks: #111111;
+  --teks-muted: #555555;
+  --input-bg: #f8f8f8;
+  --input-border: #cccccc;
+  --input-focus: #7c5cfc;
+  --label-color: #444444;
+  --btn-theme-bg: #1e1e2e;
+  --btn-theme-color: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.08);
+}
+
+/* ===== VARIABEL MODE GELAP ===== */
+body.gelap {
+  --bg: #1a1a2e;
+  --wrapper-bg: #28283c;
+  --teks: #ffffff;
+  --teks-muted: #aaaaaa;
+  --input-bg: #1e1e2e;
+  --input-border: #444455;
+  --input-focus: #9d7dff;
+  --label-color: #cccccc;
+  --btn-theme-bg: #f0f0f5;
+  --btn-theme-color: #111111;
+  --shadow: rgba(0, 0, 0, 0.4);
+}
+
+/* ===== RESET ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== BODY ===== */
+body {
+  font-family: sans-serif;
+  background: var(--bg);
+  color: var(--teks);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px 20px; /* padding atas untuk tombol theme */
+  transition: background 0.4s, color 0.4s;
+}
+
+/* ===== TOMBOL DARK MODE (pojok kanan atas) ===== */
+#theme-btn {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  background: var(--btn-theme-bg);
+  color: var(--btn-theme-color);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.4s, color 0.4s;
+  z-index: 100;
+  box-shadow: 0 2px 8px var(--shadow);
+}
+#theme-btn:hover {
+  opacity: 0.85;
+}
+
+/* ===== WRAPPER / CARD ===== */
+.wrapper {
+  background: var(--wrapper-bg);
+  padding: 36px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 4px 20px var(--shadow);
+  transition: background 0.4s, box-shadow 0.4s;
+}
+
+h2 {
+  margin-bottom: 24px;
+  font-size: 22px;
+  color: var(--teks);
+}
+
+/* ===== FIELD ===== */
+.field {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: var(--label-color);
+  transition: color 0.4s;
+}
+
+/* ===== INPUT ===== */
+input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 2px solid var(--input-border);
+  background: var(--input-bg);
+  color: var(--teks);
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s, background 0.4s, color 0.4s;
+}
+input::placeholder {
+  color: var(--teks-muted);
+  opacity: 0.7;
+}
+input:focus         { border-color: var(--input-focus); }
+input.valid         { border-color: #27c467; }
+input.invalid       { border-color: #e54b5a; }
+
+/* ===== PESAN ERROR ===== */
+.pesan-error {
+  display: block;
+  color: #e54b5a;
+  font-size: 12px;
+  margin-top: 4px;
+  min-height: 16px;
+}
+
+/* ===== PASSWORD STRENGTH BAR ===== */
+.bilah {
+  height: 5px;
+  background: var(--input-border);
+  border-radius: 3px;
+  margin-top: 8px;
+  transition: background 0.4s;
+}
+.isian {
+  height: 100%;
+  width: 0%;
+  border-radius: 3px;
+  transition: width 0.3s ease, background 0.3s;
+}
+.strength-label {
+  font-size: 12px;
+  margin-top: 4px;
+  color: var(--teks-muted);
+  min-height: 16px;
+  transition: color 0.3s;
+}
+
+/* ===== TOMBOL SUBMIT ===== */
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #7c5cfc;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s, transform 0.1s;
+}
+button[type="submit"]:hover  { background: #6a4de0; }
+button[type="submit"]:active { transform: scale(0.98); }
+
+/* ===== PESAN SUKSES ===== */
+#sukses {
+  text-align: center;
+  font-size: 22px;
+  padding: 30px 20px;
+  color: #27c467;
+  animation: fadeIn 0.5s ease;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== UTILITY ===== */
+.tersembunyi {
+  display: none;
+}

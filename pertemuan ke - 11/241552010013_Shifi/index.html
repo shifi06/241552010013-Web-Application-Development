@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌿 Dashboard Kebun Buah</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER
+  ============================================================ -->
+  <header class="header">
+    <div class="header-left">
+      <span class="logo">🌿</span>
+      <div>
+        <h1>Kebun Buah Nusantara</h1>
+        <p class="subtitle">Sistem Manajemen Kebun Digital</p>
+      </div>
+    </div>
+    <button id="theme-btn" aria-label="Toggle Dark Mode">🌙 Mode Gelap</button>
+  </header>
+
+  <!-- ============================================================
+       TAB NAVIGATION
+  ============================================================ -->
+  <nav class="tab-nav">
+    <button class="tombol-tab aktif" data-tab="ikhtisar">🌳 Ikhtisar</button>
+    <button class="tombol-tab"       data-tab="buah">🍎 Data Buah</button>
+    <button class="tombol-tab"       data-tab="faq">❓ FAQ Kebun</button>
+  </nav>
+
+  <main class="main-content">
+
+    <!-- ==========================================================
+         PANEL 1 — IKHTISAR
+    ========================================================== -->
+    <section id="ikhtisar" class="panel aktif">
+      <h2 class="section-title">Ringkasan Kebun</h2>
+
+      <!-- Kartu Statistik -->
+      <div class="grid-statistik">
+        <div class="kartu-stat hijau" data-target="1240">
+          <div class="stat-icon">🌱</div>
+          <h3 class="penghitung">0</h3>
+          <p>Pohon Ditanam</p>
+        </div>
+        <div class="kartu-stat kuning" data-target="860">
+          <div class="stat-icon">🍋</div>
+          <h3 class="penghitung">0</h3>
+          <p>Siap Panen</p>
+        </div>
+        <div class="kartu-stat merah" data-target="3420">
+          <div class="stat-icon">🍓</div>
+          <h3 class="penghitung">0</h3>
+          <p>Kg Sudah Dipanen</p>
+        </div>
+        <div class="kartu-stat biru" data-target="12">
+          <div class="stat-icon">🌾</div>
+          <h3 class="penghitung">0</h3>
+          <p>Jenis Buah</p>
+        </div>
+      </div>
+
+      <!-- Banner info musim -->
+      <div class="banner-musim">
+        <span>🌤️</span>
+        <div>
+          <strong>Musim Panen Sekarang:</strong> Mangga, Rambutan, Durian
+          <br><small>Estimasi panen berikutnya: Jambu &amp; Pepaya — 2 minggu lagi</small>
+        </div>
+      </div>
+
+      <!-- Tombol buka modal tambah laporan -->
+      <button class="btn-primary" id="btn-buka-modal">
+        + Tambah Laporan Panen
+      </button>
+    </section>
+
+    <!-- ==========================================================
+         PANEL 2 — DATA BUAH
+    ========================================================== -->
+    <section id="buah" class="panel">
+      <h2 class="section-title">Data Buah Kebun</h2>
+
+      <div class="tabel-wrapper">
+        <table class="tabel-buah">
+          <thead>
+            <tr>
+              <th>Buah</th>
+              <th>Jumlah Pohon</th>
+              <th>Status</th>
+              <th>Est. Panen</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>🥭 Mangga Harum Manis</td>
+              <td>120 pohon</td>
+              <td><span class="badge panen">Panen</span></td>
+              <td>Sedang berlangsung</td>
+              <td><button class="btn-aksi" onclick="bukaModalPanen('Mangga')">📋 Laporan</button></td>
+            </tr>
+            <tr>
+              <td>🍋 Jeruk Keprok</td>
+              <td>85 pohon</td>
+              <td><span class="badge siap">Siap Panen</span></td>
+              <td>3 hari lagi</td>
+              <td><button class="btn-aksi" onclick="bukaModalPanen('Jeruk')">📋 Laporan</button></td>
+            </tr>
+            <tr>
+              <td>🍓 Stroberi</td>
+              <td>200 rumpun</td>
+              <td><span class="badge panen">Panen</span></td>
+              <td>Sedang berlangsung</td>
+              <td><button class="btn-aksi" onclick="bukaModalPanen('Stroberi')">📋 Laporan</button></td>
+            </tr>
+            <tr>
+              <td>🍉 Semangka</td>
+              <td>60 pohon</td>
+              <td><span class="badge tumbuh">Tumbuh</span></td>
+              <td>3 minggu lagi</td>
+              <td><button class="btn-aksi" onclick="bukaModalPanen('Semangka')">📋 Laporan</button></td>
+            </tr>
+            <tr>
+              <td>🍌 Pisang Cavendish</td>
+              <td>150 pohon</td>
+              <td><span class="badge siap">Siap Panen</span></td>
+              <td>1 minggu lagi</td>
+              <td><button class="btn-aksi" onclick="bukaModalPanen('Pisang')">📋 Laporan</button></td>
+            </tr>
+            <tr>
+              <td>🍍 Nanas</td>
+              <td>300 rumpun</td>
+              <td><span class="badge tumbuh">Tumbuh</span></td>
+              <td>1 bulan lagi</td>
+              <td><button class="btn-aksi" onclick="bukaModalPanen('Nanas')">📋 Laporan</button></td>
+            </tr>
+            <tr>
+              <td>🫐 Jambu Air</td>
+              <td>45 pohon</td>
+              <td><span class="badge siap">Siap Panen</span></td>
+              <td>2 hari lagi</td>
+              <td><button class="btn-aksi" onclick="bukaModalPanen('Jambu')">📋 Laporan</button></td>
+            </tr>
+            <tr>
+              <td>🍈 Melon</td>
+              <td>75 pohon</td>
+              <td><span class="badge panen">Panen</span></td>
+              <td>Sedang berlangsung</td>
+              <td><button class="btn-aksi" onclick="bukaModalPanen('Melon')">📋 Laporan</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         PANEL 3 — FAQ (ACCORDION)
+    ========================================================== -->
+    <section id="faq" class="panel">
+      <h2 class="section-title">FAQ Seputar Kebun</h2>
+
+      <div class="item">
+        <button class="judul-akordion">
+          🌱 Kapan waktu terbaik menanam bibit buah?
+          <span class="icon-arrow">▼</span>
+        </button>
+        <div class="konten-akordion">
+          <p>Waktu terbaik menanam bibit buah di Indonesia adalah awal musim hujan (Oktober–November). Tanah yang lembab membantu akar tumbuh lebih cepat. Pastikan bibit sudah berumur minimal 3–4 bulan dari pembibitan sebelum dipindahkan ke lahan.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <button class="judul-akordion">
+          🍎 Bagaimana cara mengetahui buah sudah siap dipanen?
+          <span class="icon-arrow">▼</span>
+        </button>
+        <div class="konten-akordion">
+          <p>Tanda buah siap panen berbeda-beda: <strong>Mangga</strong> — warna kulit berubah kekuningan, aroma harum. <strong>Pisang</strong> — sudah penuh berisi, kulit mulai menguning. <strong>Semangka</strong> — bunyinya bergema saat diketuk, sulur mengering. <strong>Stroberi</strong> — warna merah merata dan mudah lepas saat ditarik ringan.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <button class="judul-akordion">
+          💧 Berapa banyak kebutuhan air untuk kebun buah?
+          <span class="icon-arrow">▼</span>
+        </button>
+        <div class="konten-akordion">
+          <p>Kebutuhan air tergantung jenis buah. Rata-rata pohon buah dewasa membutuhkan 20–40 liter air per hari di musim kemarau. Sistem irigasi tetes (drip irrigation) sangat direkomendasikan karena hemat air hingga 50% dibanding siram manual. Siram pagi hari untuk mengurangi penguapan.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <button class="judul-akordion">
+          🐛 Bagaimana mengatasi hama tanaman buah secara alami?
+          <span class="icon-arrow">▼</span>
+        </button>
+        <div class="konten-akordion">
+          <p>Beberapa cara alami mengatasi hama: (1) Semprotkan larutan bawang putih + cabai yang diencerkan. (2) Pasang perangkap kuning lengket untuk lalat buah. (3) Tanam tanaman pengusir hama seperti serai dan kemangi di sela-sela pohon. (4) Manfaatkan predator alami seperti laba-laba dan belalang sembah.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <button class="judul-akordion">
+          📊 Bagaimana cara mencatat hasil panen dengan baik?
+          <span class="icon-arrow">▼</span>
+        </button>
+        <div class="konten-akordion">
+          <p>Gunakan fitur "Tambah Laporan Panen" di halaman Ikhtisar atau klik tombol "Laporan" di tabel Data Buah. Catat nama petugas, jenis buah, jumlah panen dalam kg, dan kondisi buah. Laporan yang konsisten membantu analisis produktivitas dan perencanaan musim panen berikutnya.</p>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- ============================================================
+       MODAL — FORM LAPORAN PANEN
+  ============================================================ -->
+  <div class="overlay" id="overlay">
+    <div class="modal">
+      <div class="modal-header">
+        <h3 id="modal-judul">📋 Laporan Panen</h3>
+        <button class="btn-tutup" id="btn-tutup">✕</button>
+      </div>
+
+      <form id="form-laporan">
+
+        <div class="field">
+          <label>Nama Petugas Kebun</label>
+          <input id="f-nama" type="text" placeholder="Minimal 3 karakter">
+          <span class="pesan-error"></span>
+        </div>
+
+        <div class="field">
+          <label>Email Petugas</label>
+          <input id="f-email" type="email" placeholder="contoh@kebun.com">
+          <span class="pesan-error"></span>
+        </div>
+
+        <div class="field">
+          <label>PIN Akses Laporan</label>
+          <input id="f-pin" type="password" placeholder="Minimal 8 karakter">
+          <!-- Strength bar PIN -->
+          <div class="bilah"><div class="isian"></div></div>
+          <div class="strength-label" id="strength-label"></div>
+          <span class="pesan-error"></span>
+        </div>
+
+        <div class="field">
+          <label>Jenis Buah</label>
+          <input id="f-buah" type="text" placeholder="Contoh: Mangga Harum Manis" readonly>
+          <span class="pesan-error"></span>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn-batal" id="btn-batal">Batal</button>
+          <button type="submit" class="btn-simpan">💾 Simpan Laporan</button>
+        </div>
+
+      </form>
+
+      <!-- Pesan sukses setelah submit -->
+      <div id="modal-sukses" class="tersembunyi modal-sukses">
+        <div class="sukses-icon">✅</div>
+        <h3>Laporan Berhasil Disimpan!</h3>
+        <p>Data panen <strong id="sukses-buah"></strong> telah tercatat.</p>
+        <button class="btn-primary" id="btn-modal-close">Tutup</button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
