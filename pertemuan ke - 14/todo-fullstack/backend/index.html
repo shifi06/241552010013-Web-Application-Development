@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: system-ui, sans-serif;
+      background: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      padding-top: 60px;
+    }
+    .app {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 500px;
+    }
+    h1 { margin-bottom: 20px; color: #1a1a2e; }
+    .add-form {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .add-form input {
+      flex: 1;
+      padding: 12px 16px;
+      border: 2px solid #e0e0e0;
+      border-radius: 8px;
+      font-size: 16px;
+      outline: none;
+    }
+    .add-form input:focus { border-color: #4a6cf7; }
+    .add-form button {
+      padding: 12px 24px;
+      background: #4a6cf7;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .add-form button:hover { background: #3a56d4; }
+    .todo-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 16px;
+      background: #f8f9fa;
+      border-radius: 8px;
+      margin-bottom: 8px;
+    }
+    .todo-item .text {
+      flex: 1;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .todo-item .text.done {
+      text-decoration: line-through;
+      color: #888;
+    }
+    .todo-item .delete-btn {
+      background: none;
+      border: none;
+      color: #dc3545;
+      font-size: 20px;
+      cursor: pointer;
+      padding: 0 8px;
+    }
+    .empty-state {
+      text-align: center;
+      color: #888;
+      padding: 40px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <h1>📝 Todo App</h1>
+    <div class="add-form">
+      <input type="text" id="inp" placeholder="Tulis todo baru..." onkeydown="if(event.key=='Enter') addTodo()">
+      <button onclick="addTodo()">Tambah</button>
+    </div>
+    <ul id="list"></ul>
+  </div>
+  <script>
+    const API = 'http://localhost:3000/api/todos';
+
+    async function loadTodos() {
+      const list = document.querySelector('#list');
+      list.innerHTML = '<p class="empty-state">⏳ Memuat...</p>';
+      try {
+        const res = await fetch(API);
+        const todos = await res.json();
+        if (todos.length === 0) {
+          list.innerHTML = '<p class="empty-state">✨ Belum ada todo. Tambahkan yang pertama!</p>';
+          return;
+        }
+        list.innerHTML = todos.map(todo => `
+          <li class="todo-item">
+            <span class="text ${todo.done ? 'done' : ''}" onclick="toggleTodo(${todo.id}, ${!todo.done})">
+              ${todo.text}
+            </span>
+            <button class="delete-btn" onclick="deleteTodo(${todo.id})">✕</button>
+          </li>
+        `).join('');
+      } catch (e) {
+        list.innerHTML = '<p class="empty-state">❌ Gagal memuat data. Pastikan backend berjalan di port 3000</p>';
+        console.error(e);
+      }
+    }
+
+    async function addTodo() {
+      const input = document.querySelector('#inp');
+      const text = input.value.trim();
+      if (!text) return alert('Tulis todo terlebih dahulu!');
+      try {
+        await fetch(API, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ text })
+        });
+        input.value = '';
+        loadTodos();
+      } catch (e) {
+        alert('Gagal menambah todo');
+      }
+    }
+
+    async function toggleTodo(id, newDone) {
+      try {
+        await fetch(`${API}/${id}`, {
+          method: 'PATCH',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ done: newDone })
+        });
+        loadTodos();
+      } catch (e) {
+        alert('Gagal mengupdate todo');
+      }
+    }
+
+    async function deleteTodo(id) {
+      if (!confirm('Hapus todo ini?')) return;
+      try {
+        await fetch(`${API}/${id}`, { method: 'DELETE' });
+        loadTodos();
+      } catch (e) {
+        alert('Gagal menghapus todo');
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', loadTodos);
+  </script>
+</body>
+</html>
